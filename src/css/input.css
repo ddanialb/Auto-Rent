@@ -4,9 +4,11 @@
   font-family: "Estedad";
   src: url(../font/Estedad-Regular.ttf);
 }
+
 @theme {
   --font-Estedad: Estedad;
 }
+
 .marquee {
   overflow: hidden;
 }
