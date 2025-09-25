@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: "Estedad";
+  src: url(../font/Estedad-Regular.ttf);
+}
+@theme {
+  --font-Estedad: Estedad;
+}
+.marquee {
+  overflow: hidden;
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: none;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(var(--marquee-distance, 50%) * -1));
+  }
+}
+
+.shine-effect {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    135deg,
+    transparent 35%,
+    rgba(242, 242, 242, 0.559) 50%,
+    transparent 10%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.group:hover .shine-effect {
+  animation: shine-move 1.4s ease forwards;
+}
+
+@keyframes shine-move {
+  0% {
+    transform: translate(-100%, -100%) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(10deg);
+    opacity: 1;
+  }
+}
