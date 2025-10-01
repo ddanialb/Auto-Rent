@@ -9,6 +9,7 @@
   --font-Estedad: Estedad;
 }
 
+/* Marquee for Brands */
 .marquee {
   overflow: hidden;
 }
@@ -29,6 +30,7 @@
     transform: translateX(calc(var(--marquee-distance, 50%) * -1));
   }
 }
+/* shine effect for car-category */
 
 .shine-effect {
   position: absolute;
@@ -63,4 +65,54 @@
     transform: translate(100%, 100%) rotate(10deg);
     opacity: 1;
   }
+}
+
+/* Hide DaisyUI default accordion icons */
+.collapse-title:after {
+  display: none !important;
+}
+
+.accordion-icon {
+  position: relative;
+}
+
+.accordion-icon .plus-icon,
+.accordion-icon .minus-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-icon .plus-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.accordion-icon .minus-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.collapse
+  input[type="radio"]:checked
+  ~ .collapse-title
+  .accordion-icon
+  .plus-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.collapse
+  input[type="radio"]:checked
+  ~ .collapse-title
+  .accordion-icon
+  .minus-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.collapse-content {
+  transition: all 0.3s ease-in-out;
 }
