@@ -7,6 +7,8 @@
 
 @theme {
   --font-Estedad: Estedad;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-mobile: 340px;
 }
 
 /* Marquee for Brands */
@@ -119,13 +121,13 @@
 
 /* Header Background Images */
 .header-bg {
-  background-image: url('../images/Header/header.png');
+  background-image: url("../images/Header/header.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .header-overlay-bg {
-  background-image: url('../images/Header/header-ro.png');
+  background-image: url("../images/Header/header-ro.png");
   background-repeat: no-repeat;
 }
