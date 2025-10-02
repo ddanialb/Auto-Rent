@@ -116,3 +116,16 @@
 .collapse-content {
   transition: all 0.3s ease-in-out;
 }
+
+/* Header Background Images */
+.header-bg {
+  background-image: url('../images/Header/header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-overlay-bg {
+  background-image: url('../images/Header/header-ro.png');
+  background-repeat: no-repeat;
+}
