@@ -9,7 +9,7 @@
   <body>
     <!-- #region wrapper -->
     <div
-      class="wrapper home-wrapper w-full lg:w-[1440px] mx-auto relative bg-[#F3F3F3]"
+      class="wrapper home-wrapper w-full max-w-[1440px] mx-auto relative bg-[#F3F3F3] overflow-x-hidden"
     >
       <!-- #region header -->
       <header
@@ -29,7 +29,7 @@
         </div>
         <!-- #region header-menu -->
         <div
-          class="header-menu w-full lg:w-[1224px] h-[70px] md:h-[96px] flex flex-wrap flex-row justify-between items-center rounded-bl-[16px] rounded-br-[16px] px-[16px] md:px-[32px] absolute left-0 lg:left-[108px] bg-white top-0"
+          class="header-menu w-full max-w-[1224px] h-[70px] md:h-[96px] flex flex-wrap flex-row justify-between items-center rounded-bl-[16px] rounded-br-[16px] px-[16px] md:px-[32px] absolute left-0 lg:left-[108px] bg-white top-0"
         >
           <!-- Mobile: Hamburger menu (order-1, right in RTL) -->
           <div class="order-1 lg:order-2 lg:hidden">
@@ -55,7 +55,7 @@
 
           <!-- Mobile: Logo (order-2, center) -->
           <div
-            class="order-2 lg:order-1 w-[120px] md:w-[151.28px] h-[40px] md:h-[59px] absolute left-1/2 transform -translate-x-1/2 lg:relative lg:left-auto lg:transform-none"
+            class="order-2 lg:order-1 w-[120px] md:w-[151.28px] h-[40px] md:h-[59px] flex-1 lg:flex-none flex justify-center lg:justify-start"
           >
             <img
               src="./src/images/Logo/Logo.svg"
@@ -217,7 +217,7 @@
       <!-- #endregion header -->
       <!-- #region rent-terms -->
       <div
-        class="w-[calc(100%-2rem)] md:w-[1223px] h-auto md:h-[201px] mx-4 md:mx-auto p-4 md:p-5 bg-white border border-gray-300 rounded-2xl flex flex-col gap-4 relative md:absolute top-4 md:top-[580px] md:left-[7.5%]"
+        class="w-[calc(100%-2rem)] md:w-full md:max-w-[1223px] h-auto md:h-[201px] mx-4 md:mx-auto p-4 md:p-5 bg-white border border-gray-300 rounded-2xl flex flex-col gap-4 relative md:absolute top-4 md:top-[580px] md:left-[7.5%]"
       >
         <!-- #region rent-terms-top -->
         <div
@@ -399,7 +399,7 @@
 
         <!-- Desktop form -->
         <div
-          class="hidden md:flex w-[1175px] h-[56px] flex-row items-center justify-between border border-gray-100 rounded-2xl box-border gap-4"
+          class="hidden md:flex w-full max-w-[1175px] h-[56px] flex-row items-center justify-between border border-gray-100 rounded-2xl box-border gap-4"
         >
           <!-- #region location-select -->
           <div class="w-1/2 h-[28px]">
@@ -588,97 +588,103 @@
 
         <!-- #region cards -->
         <div
-          class="w-full h-auto md:h-[190px] relative md:absolute top-0 md:top-[215px] flex flex-col md:flex-row justify-center items-stretch gap-6 md:gap-x-[40px] px-6 md:px-0"
+          class="w-full flex justify-center relative md:absolute top-0 md:top-[215px]"
         >
-          <!-- #region delivery -->
           <div
-            class="delivery w-full max-w-[280px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] justify-center items-center mx-auto"
+            class="h-auto md:h-[190px] flex flex-col md:flex-row justify-center items-center gap-6 md:gap-x-[40px] px-6 md:px-0"
           >
+            <!-- #region delivery -->
             <div
-              class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+              class="delivery w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] justify-center items-center mx-auto"
             >
-              <img
-                src="./src/images/Image-Text/Box.svg"
-                alt=""
-                class="w-7 h-7 md:w-8 md:h-8"
-              />
-            </div>
-            <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
-              <p
-                class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+              <div
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
               >
-                تحویل در محل
-              </p>
-            </div>
-            <div class="w-full md:w-full h-auto md:h-[44px] flex px-1 md:px-0">
-              <p
-                class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                <img
+                  src="./src/images/Image-Text/Box.svg"
+                  alt=""
+                  class="w-7 h-7 md:w-8 md:h-8"
+                />
+              </div>
+              <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
+                <p
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                >
+                  تحویل در محل
+                </p>
+              </div>
+              <div
+                class="w-full md:w-full h-auto md:h-[44px] flex px-1 md:px-0"
               >
-                تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
-              </p>
+                <p
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                >
+                  تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- #endregion delivery -->
+            <!-- #endregion delivery -->
 
-          <!-- #region support -->
-          <div
-            class="all_time_support w-full max-w-[280px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto"
-          >
+            <!-- #region support -->
             <div
-              class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+              class="all_time_support w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto"
             >
-              <img
-                src="./src/images/Image-Text/24-support.svg"
-                alt=""
-                class="w-7 h-7 md:w-8 md:h-8"
-              />
-            </div>
-            <div class="w-auto md:w-[129px] h-auto md:h-[22px] mx-auto">
-              <p
-                class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+              <div
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
               >
-                پشتیبانی 24 ساعته
-              </p>
+                <img
+                  src="./src/images/Image-Text/24-support.svg"
+                  alt=""
+                  class="w-7 h-7 md:w-8 md:h-8"
+                />
+              </div>
+              <div class="w-auto md:w-[129px] h-auto md:h-[22px] mx-auto">
+                <p
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                >
+                  پشتیبانی 24 ساعته
+                </p>
+              </div>
+              <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
+                <p
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                >
+                  کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+                </p>
+              </div>
             </div>
-            <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
-              <p
-                class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
-              >
-                کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
-              </p>
-            </div>
-          </div>
-          <!-- #endregion support -->
+            <!-- #endregion support -->
 
-          <!-- #region best_price-->
-          <div
-            class="best_price w-full max-w-[280px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto"
-          >
+            <!-- #region best_price-->
             <div
-              class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+              class="best_price w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto"
             >
-              <img
-                src="./src/images/Image-Text/wallet-minus.svg"
-                alt=""
-                class="w-7 h-7 md:w-8 md:h-8"
-              />
-            </div>
-            <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
-              <p
-                class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+              <div
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
               >
-                قیمت مناسب
-              </p>
+                <img
+                  src="./src/images/Image-Text/wallet-minus.svg"
+                  alt=""
+                  class="w-7 h-7 md:w-8 md:h-8"
+                />
+              </div>
+              <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
+                <p
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                >
+                  قیمت مناسب
+                </p>
+              </div>
+              <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
+                <p
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                >
+                  هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+                </p>
+              </div>
             </div>
-            <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
-              <p
-                class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
-              >
-                هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
-              </p>
-            </div>
+            <!-- #endregion best_price-->
           </div>
-          <!-- #endregion best_price-->
         </div>
         <!-- #endregion cards -->
       </div>
@@ -895,12 +901,12 @@
       >
         <!-- #region inventory-filters -->
         <div
-          class="w-full md:w-[400px] h-full flex items-center justify-center md:justify-start md:mr-[520px] gap-x-[8px]"
+          class="w-full md:w-[400px] h-full flex items-center justify-center md:justify-start md:mr-[520px] gap-x-2 md:gap-x-[8px]"
         >
           <!-- #region filter-popular -->
-          <div class="w-auto h-full">
+          <div class="w-auto">
             <button
-              class="btn w-[100px] md:w-[128px] h-[40px] md:h-full border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
+              class="btn w-[90px] sm:w-[100px] md:w-[128px] h-[36px] sm:h-[40px] md:h-[48px] border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[11px] sm:text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
             >
               پرطرفدار
             </button>
@@ -908,9 +914,9 @@
           <!-- #endregion filter-popular -->
 
           <!-- #region filter-luxury -->
-          <div class="w-auto h-full">
+          <div class="w-auto">
             <button
-              class="btn w-[100px] md:w-[128px] h-[40px] md:h-full border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
+              class="btn w-[90px] sm:w-[100px] md:w-[128px] h-[36px] sm:h-[40px] md:h-[48px] border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[11px] sm:text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
             >
               لوکس
             </button>
@@ -918,9 +924,9 @@
           <!-- #endregion filter-luxury -->
 
           <!-- #region filter-economy -->
-          <div class="w-auto h-full">
+          <div class="w-auto">
             <button
-              class="btn w-[100px] md:w-[128px] h-[40px] md:h-full border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
+              class="btn w-[90px] sm:w-[100px] md:w-[128px] h-[36px] sm:h-[40px] md:h-[48px] border-[1px] bg-transparent border-[#194BF0] rounded-[8px] font-Estedad text-[#194BF0] text-[11px] sm:text-[12px] md:text-[14px] text-center hover:bg-[#194BF0] hover:text-[#ffffff] duration-300 ease-in"
             >
               اقتصادی
             </button>
@@ -930,16 +936,22 @@
         <!-- #endregion inventory-filters -->
         <!-- #region inventory-link -->
         <div
-          class="w-full md:w-[184px] h-full flex justify-center md:justify-start md:mr-[250px] items-center gap-x-[10px]"
+          class="w-full md:w-[184px] h-full flex justify-center md:justify-start md:mr-[250px] items-center gap-x-2 md:gap-x-[10px]"
         >
           <a
             href="#"
-            class="w-auto md:w-[102px] h-[32px] block no-underline font-Estedad font-semibold text-[16px] md:text-[18px] text-[#194BF0] leading-[32px]"
+            class="w-auto md:w-[102px] h-[32px] block no-underline font-Estedad font-semibold text-[14px] sm:text-[16px] md:text-[18px] text-[#194BF0] hover:text-[#1635c7] transition-colors duration-300 leading-[32px]"
           >
             مشاهده همه
           </a>
-          <a href="#" class="w-[20px] h-[20px] flex items-center justify-center"
-            ><img src="./src/images/Reserve-Cars/arrow-left.svg" alt="" />
+          <a
+            href="#"
+            class="w-[18px] h-[18px] md:w-[20px] md:h-[20px] flex items-center justify-center hover:scale-110 transition-transform duration-300"
+            ><img
+              src="./src/images/Reserve-Cars/arrow-left.svg"
+              alt=""
+              class="w-full h-full object-contain"
+            />
           </a>
         </div>
         <!-- #endregion inventory-link -->
@@ -979,23 +991,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1004,23 +1016,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1030,14 +1042,14 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
                 class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
+            <div class="flex-shrink-0">
               <p class="font-Estedad font-bold text-[10px] text-[#212121]">
                 80 میلیون تومان
               </p>
@@ -1078,23 +1090,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1103,23 +1115,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1129,14 +1141,14 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
                 class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
+            <div class="flex-shrink-0">
               <p class="font-Estedad font-bold text-[10px] text-[#212121]">
                 80 میلیون تومان
               </p>
@@ -1182,23 +1194,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1207,23 +1219,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1233,14 +1245,14 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
                 class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
+            <div class="flex-shrink-0">
               <p class="font-Estedad font-bold text-[10px] text-[#212121]">
                 80 میلیون تومان
               </p>
@@ -1281,23 +1293,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1306,23 +1318,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1332,14 +1344,14 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
                 class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
+            <div class="flex-shrink-0">
               <p class="font-Estedad font-bold text-[10px] text-[#212121]">
                 80 میلیون تومان
               </p>
@@ -1385,23 +1397,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1410,23 +1422,23 @@
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
                   class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
                   class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
                 >
@@ -1436,14 +1448,14 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
                 class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
+            <div class="flex-shrink-0">
               <p class="font-Estedad font-bold text-[10px] text-[#212121]">
                 80 میلیون تومان
               </p>
@@ -2379,7 +2391,7 @@
       <!-- #endregion how_to_reserve_section-->
       <!-- #region reservation_steps_section-->
       <div
-        class="reservation-steps w-full md:w-[85%] mx-auto px-4 md:px-0 flex gap-y-[19px] flex-col md:flex-row items-center"
+        class="reservation-steps w-full md:w-[85%] mx-auto px-4 md:px-0 flex gap-y-[19px] flex-col md:flex-row items-center mt-[58px] md:mt-0"
       >
         <!-- Step 1: انتخاب خودرو - Mobile Order 1 -->
         <div
@@ -3117,7 +3129,7 @@
             class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
           >
             <div
-              class="h-auto md:h-[64px] w-full md:w-[89%] mx-auto flex gap-x-[12px] md:gap-x-[16px] items-center"
+              class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
             >
               <div
                 class="w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-[50%] flex-shrink-0"
@@ -3129,7 +3141,7 @@
                 />
               </div>
               <div
-                class="flex-1 md:w-[118px] h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
+                class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
                   class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
@@ -3151,7 +3163,7 @@
             class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
           >
             <div
-              class="h-auto md:h-[64px] w-full md:w-[89%] mx-auto flex gap-x-[12px] md:gap-x-[16px] items-center"
+              class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
             >
               <div
                 class="w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-[50%] flex-shrink-0"
@@ -3163,7 +3175,7 @@
                 />
               </div>
               <div
-                class="flex-1 md:w-[118px] h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
+                class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
                   class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
@@ -3185,7 +3197,7 @@
             class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
           >
             <div
-              class="h-auto md:h-[64px] w-full md:w-[89%] mx-auto flex gap-x-[12px] md:gap-x-[16px] items-center"
+              class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
             >
               <div
                 class="w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-[50%] flex-shrink-0"
@@ -3197,7 +3209,7 @@
                 />
               </div>
               <div
-                class="flex-1 md:w-[118px] h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
+                class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
                   class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
@@ -3219,7 +3231,7 @@
             class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
           >
             <div
-              class="h-auto md:h-[64px] w-full md:w-[89%] mx-auto flex gap-x-[12px] md:gap-x-[16px] items-center"
+              class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
             >
               <div
                 class="w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-[50%] flex-shrink-0"
@@ -3231,10 +3243,10 @@
                 />
               </div>
               <div
-                class="flex-1 md:w-[118px] h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
+                class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
-                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
+                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] whitespace-nowrap"
                 >
                   فاطمه ابراهیمی‌فر
                 </div>
@@ -3532,26 +3544,29 @@
       <!-- #region footer -->
       <div class="footer w-full">
         <div
-          class="w-[85%] mt-12 sm:mt-20 bg-[#1E1E1EE5] rounded-2xl mx-auto mb-8"
+          class="w-[95%] sm:w-[90%] lg:w-[85%] mt-8 sm:mt-12 lg:mt-20 bg-[#1E1E1EE5] rounded-xl sm:rounded-2xl mx-auto mb-6 sm:mb-8"
         >
           <footer class="w-full">
             <!-- #region footer_top -->
             <div
-              class="w-[90%] sm:w-11/12 mx-auto border-[1px] border-[#868686] rounded-[16px] flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 sm:mt-10 p-4 sm:p-6 mt-[40px]"
+              class="w-[95%] sm:w-[90%] lg:w-11/12 mx-auto border-[1px] border-[#868686] rounded-[12px] sm:rounded-[16px] flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 lg:gap-6 mt-6 sm:mt-8 lg:mt-10"
             >
               <div
-                class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5 justify-center p-4 rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
               >
                 <img
                   src="./src/images/Footer/zang.svg"
                   alt="تماس"
-                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0"
                 />
-                <div class="flex flex-col gap-2 justify-center items-center">
-                  <span class="font-Estedad text-base text-gray-100"
+                <div
+                  class="flex flex-col gap-1 sm:gap-2 justify-center items-center"
+                >
+                  <span class="font-Estedad text-sm sm:text-base text-gray-100"
                     >ارتباط با ما</span
                   >
-                  <span class="font-Estedad text-base text-gray-100"
+                  <span
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100"
                     >0912-21326545</span
                   >
                 </div>
@@ -3560,18 +3575,21 @@
                 class="w-full sm:w-px h-px sm:h-8 bg-[#868686] sm:my-4 hidden sm:block"
               ></div>
               <div
-                class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5 justify-center p-4 rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
               >
                 <img
                   src="./src/images/footer/email.svg"
                   alt="ایمیل"
-                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0"
                 />
-                <div class="flex flex-col gap-2 justify-center items-center">
-                  <span class="font-Estedad text-base text-gray-100"
+                <div
+                  class="flex flex-col gap-1 sm:gap-2 justify-center items-center"
+                >
+                  <span class="font-Estedad text-sm sm:text-base text-gray-100"
                     >ایمیل</span
                   >
-                  <span class="font-Estedad text-base text-gray-100"
+                  <span
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 break-all"
                     >autorent@info.com</span
                   >
                 </div>
@@ -3580,16 +3598,21 @@
                 class="w-full sm:w-px h-px sm:h-8 bg-[#868686] sm:my-4 hidden sm:block"
               ></div>
               <div
-                class="w-full sm:w-1/3 flex items-center gap-4 sm:gap-5 justify-center p-4 rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
               >
                 <img
                   src="./src/images/footer/addres.svg"
                   alt="آدرس"
-                  class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0"
                 />
-                <div class="flex flex-col gap-2 justify-center items-center">
-                  <span class="font-Estedad text-base text-gray-100">آدرس</span>
-                  <span class="font-Estedad text-base text-gray-100"
+                <div
+                  class="flex flex-col gap-1 sm:gap-2 justify-center items-center"
+                >
+                  <span class="font-Estedad text-sm sm:text-base text-gray-100"
+                    >آدرس</span
+                  >
+                  <span
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 text-center"
                     >تهران- خ شادمان</span
                   >
                 </div>
@@ -3599,20 +3622,22 @@
 
             <!-- #region footer_bottom -->
             <div
-              class="w-[90%] md:w-11/12 mx-auto flex flex-col gap-6 mt-4 md:mt-6 px-4 md:px-8"
+              class="w-[95%] sm:w-[90%] lg:w-11/12 mx-auto flex flex-col gap-4 sm:gap-6 mt-3 sm:mt-4 lg:mt-6 px-3 sm:px-4 lg:px-8"
             >
               <!-- #region footer_bottom_top -->
               <div
-                class="w-full flex flex-col lg:flex-row justify-between border-b-[1px] border-[#868686] pb-6 gap-6 lg:gap-0"
+                class="w-full flex flex-col lg:flex-row justify-between border-b-[1px] border-[#868686] pb-4 sm:pb-6 gap-4 sm:gap-6 lg:gap-0"
               >
-                <div class="w-full lg:w-2/5 flex flex-col gap-6 items-start">
+                <div
+                  class="w-full lg:w-2/5 flex flex-col gap-4 sm:gap-6 items-start"
+                >
                   <img
                     src="./src/images/footer/Logo.svg"
                     alt="لوگو اتورنت"
-                    class="h-12 md:h-14 object-contain"
+                    class="h-10 sm:h-12 lg:h-14 object-contain"
                   />
                   <p
-                    class="font-Estedad text-sm md:text-base text-gray-100 text-justify"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 text-justify leading-relaxed"
                   >
                     اُتورِنت با رویکرد اعتماد به مشتری، با در اختیار داشتن
                     بزرگ‌ترین ناوگان خودرویی متشکل از انواع خودروهای صفر
@@ -3620,48 +3645,52 @@
                     خدمت‌رسانی به مشتریان است.
                   </p>
                 </div>
-                <div class="w-full lg:w-1/6 flex flex-col gap-6 justify-center">
+                <div
+                  class="w-full lg:w-1/6 flex flex-col gap-3 sm:gap-4 lg:gap-6 justify-center"
+                >
                   <a
                     href="#"
-                    class="font-Estedad text-sm md:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
                     >دسترسی آسان</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-sm md:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
                     >سوالات متداول</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-sm md:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
                     >تماس با ما</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-sm md:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
                     >درباره ما</a
                   >
                 </div>
                 <div class="w-full lg:w-1/3 flex flex-col gap-3 justify-center">
-                  <h6 class="font-Estedad text-base lg:text-lg text-gray-100">
+                  <h6
+                    class="font-Estedad text-sm sm:text-base lg:text-lg text-gray-100"
+                  >
                     خبرنامه
                   </h6>
                   <div
-                    class="w-[320px] h-[40px] border border-[#868686] rounded-[8px] flex items-center p-2 gap-2 hover:border-[#FDB713] transition-colors duration-300"
+                    class="w-full max-w-[320px] h-[36px] sm:h-[40px] border border-[#868686] rounded-[8px] flex items-center p-2 gap-2 hover:border-[#FDB713] transition-colors duration-300"
                   >
                     <input
                       type="email"
                       required
                       placeholder="ایمیل خود را وارد کنید"
-                      class="w-full bg-transparent border-none text-[#C2C2C2] font-Estedad text-sm placeholder:text-gray-100 placeholder:text-right focus:outline-none validator"
+                      class="flex-1 bg-transparent border-none text-[#C2C2C2] font-Estedad text-xs sm:text-sm placeholder:text-gray-100 placeholder:text-right focus:outline-none validator"
                     />
                     <div
-                      class="validator-hint font-Estedad text-xs text-red-400"
+                      class="validator-hint font-Estedad text-xs text-red-400 hidden"
                     >
                       آدرس نادرست است
                     </div>
                     <button
-                      class="bg-[#FDB713] text-gray-900 font-Estedad text-sm h-8 px-4 rounded-md hover:bg-[#fdb713d3] active:bg-yellow-600 transition duration-200"
+                      class="bg-[#FDB713] text-gray-900 font-Estedad text-xs sm:text-sm h-6 sm:h-8 px-2 sm:px-4 rounded-md hover:bg-[#fdb713d3] active:bg-yellow-600 transition duration-200 flex-shrink-0"
                     >
                       ارسال
                     </button>
@@ -3672,14 +3701,16 @@
 
               <!-- #region footer_bottom_bottom -->
               <div
-                class="w-full flex justify-center items-center gap-2 mt-6 mb-4"
+                class="w-full flex justify-center items-center gap-2 mt-4 sm:mt-6 mb-3 sm:mb-4"
               >
                 <img
                   src="./src/images/footer/creative-commons.svg"
                   alt="کپی‌رایت"
-                  class="w-5 h-5 object-contain"
+                  class="w-4 h-4 sm:w-5 sm:h-5 object-contain flex-shrink-0"
                 />
-                <p class="font-Estedad text-sm text-gray-400 text-center">
+                <p
+                  class="font-Estedad text-xs sm:text-sm text-gray-400 text-center"
+                >
                   تمامی حقوق این وب‌سایت متعلق به اُتورِنت می‌باشد
                 </p>
               </div>
