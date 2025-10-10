@@ -1,5 +1,9 @@
+/* #region Tailwind setup */
 @import "tailwindcss";
 @plugin "daisyui";
+/* #endregion Tailwind setup */
+
+/* #region Font declarations */
 @font-face {
   font-family: "Estedad";
   src: url(../font/Estedad-Regular.ttf);
@@ -8,8 +12,9 @@
 @theme {
   --font-Estedad: Estedad;
 }
+/* #endregion Font declarations */
 
-/* Marquee for Brands */
+/* #region Marquee for Brands */
 .marquee {
   overflow: hidden;
 }
@@ -30,7 +35,9 @@
     transform: translateX(calc(var(--marquee-distance, 50%) * -1));
   }
 }
-/* shine effect for car-category */
+/* #endregion Marquee for Brands */
+
+/* #region Shine effect for car-category */
 
 .shine-effect {
   position: absolute;
@@ -66,8 +73,9 @@
     opacity: 1;
   }
 }
+/* #endregion Shine effect for car-category */
 
-/* Hide DaisyUI default accordion icons */
+/* #region Accordion overrides */
 .collapse-title:after {
   display: none !important;
 }
@@ -116,3 +124,125 @@
 .collapse-content {
   transition: all 0.3s ease-in-out;
 }
+/* #endregion Accordion overrides */
+
+/* #region Swiper customisation */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #cbcbcb;
+}
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #cbcbcb;
+}
+.swiper-navigation-icon {
+  color: #757575;
+  height: 20px !important;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #a3a3a3 !important;
+}
+/* #endregion Swiper customisation */
+
+/* #region Double range slider styles */
+.double-range-slider {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  margin: 20px 0;
+}
+
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  top: 0;
+}
+
+.slider-range {
+  position: absolute;
+  height: 6px;
+  background: #194bf0;
+  border-radius: 3px;
+  top: 0;
+}
+
+.slider-input {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  appearance: none;
+  pointer-events: none;
+  top: 0;
+}
+
+.slider-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #194bf0;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+}
+
+.slider-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #194bf0;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  pointer-events: all;
+  border: none;
+}
+
+.slider-input:focus {
+  outline: none;
+}
+
+.slider-input:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(25, 75, 240, 0.3), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.min-input {
+  z-index: 1;
+}
+
+.max-input {
+  z-index: 2;
+}
+/* #endregion Double range slider styles */
