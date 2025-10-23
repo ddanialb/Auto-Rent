@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl" data-theme="dark">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +9,16 @@
   <body>
     <!-- #region wrapper -->
     <div
-      class="wrapper home-wrapper w-full max-w-[1440px] mx-auto relative bg-[#F3F3F3] overflow-x-hidden"
+      class="wrapper home-wrapper w-full max-w-[1440px] mx-auto relative bg-[#F3F3F3] dark:bg-gray-900 overflow-x-hidden"
     >
       <!-- #region header -->
       <header
-        class="header w-full h-[400px] md:h-[680px] relative overflow-hidden"
+        class="header w-full h-[400px] md:h-[680px] relative overflow-hidden dark:bg-gray-900"
       >
         <img
           src="./src/images/Header/header.png"
           alt="Header Background"
-          class="absolute inset-0 w-full h-full object-cover"
+          class="absolute inset-0 w-full h-full object-cover dark:opacity-70"
         />
 
         <img
@@ -27,26 +27,26 @@
           class="hidden md:block absolute top-[130px] object-cover"
         />
         <div
-          class="Pelak hidden lg:flex w-[55px] h-[31px] bg-[#9A9A9A] relative top-[452px] -left-[815px] flex-wrap items-center justify-center pl-[28px]"
+          class="Pelak hidden lg:flex w-[55px] h-[31px] bg-[#9A9A9A] dark:bg-gray-700 relative top-[452px] -left-[815px] flex-wrap items-center justify-center pl-[28px]"
         >
           <h1
-            class="w-[23px] h-[25px] font-Estedad font-extrabold leading-[190%] text-[15px] text-center text-[#D7D7D7]"
+            class="w-[23px] h-[25px] font-Estedad font-extrabold leading-[190%] text-[15px] text-center text-[#D7D7D7] dark:text-gray-300"
           >
             اُتــورِنت
           </h1>
         </div>
         <!-- #region header-menu -->
         <div
-          class="header-menu w-full max-w-[1224px] h-[70px] md:h-[96px] flex flex-wrap flex-row justify-between items-center rounded-bl-[16px] rounded-br-[16px] px-[16px] md:px-[32px] absolute left-0 lg:left-[108px] bg-white top-0"
+          class="header-menu w-full max-w-[1224px] h-[70px] md:h-[96px] flex flex-wrap flex-row justify-between items-center rounded-bl-[16px] rounded-br-[16px] px-[16px] md:px-[32px] absolute left-0 lg:left-[108px] bg-white dark:bg-gray-800 top-0"
         >
-          <!-- Mobile: Hamburger menu (order-1, right in RTL) -->
+          <!-- Mobile: Hamburger menu -->
           <div class="order-1 lg:order-2 lg:hidden">
             <button
               id="mobile-menu-btn"
               class="flex items-center justify-center w-8 h-8"
             >
               <svg
-                class="w-6 h-6 text-[#353535]"
+                class="w-6 h-6 text-[#353535] dark:text-gray-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -61,7 +61,7 @@
             </button>
           </div>
 
-          <!-- Mobile: Logo (order-2, center) -->
+          <!-- Mobile: Logo-->
           <div
             class="order-2 lg:order-1 w-[120px] md:w-[151.28px] h-[40px] md:h-[59px] flex-1 lg:flex-none flex justify-center lg:justify-start"
           >
@@ -74,49 +74,61 @@
             </a>
           </div>
 
-          <!-- Mobile: Login button (order-3, left in RTL) -->
+          <!-- Mobile: Login button-->
           <div class="order-3 lg:order-3">
             <a
               href="#"
-              class="btn btn-sm w-[100px] md:w-[122px] h-[35px] md:h-[40px] rounded-[8px] px-[8px] md:px-[14px] py-[4px] flex gap-x-[8px] bg-[#194BF0] hover:bg-[#FDB713]/90 transition-all duration-100 ease-linear group"
+              class="btn btn-sm w-[100px] md:w-[122px] h-[35px] md:h-[40px] rounded-[8px] px-[8px] md:px-[14px] py-[4px] flex gap-x-[8px] bg-[#194BF0] dark:bg-blue-600 hover:bg-[#FDB713]/90 dark:hover:bg-yellow-500/90 transition-all duration-100 ease-linear group"
               ><span
-                class="text-[14px] md:text-[16px] font-medium text-white font-Estedad group-hover:text-[#000000]"
+                class="text-[14px] md:text-[16px] font-medium text-white font-Estedad group-hover:text-[#000000] dark:group-hover:text-gray-900"
                 >ورود / ثبت‌نام</span
               ></a
             >
           </div>
 
-          <!-- Desktop menu (order-2, center) -->
+          <!-- Desktop menu -->
           <div
-            class="hidden lg:flex lg:order-2 w-[507px] h-[28px] flex-row flex-wrap gap-x-[40px] items-center text-[#353535]"
+            class="hidden lg:flex lg:order-2 w-[507px] h-[28px] flex-row flex-wrap gap-x-[40px] items-center text-[#353535] dark:text-gray-300"
           >
             <div>
-              <a href="./plp.html" class="font-Estedad text-[16px] font-normal"
+              <a
+                href="./plp.html"
+                class="font-Estedad text-[16px] font-normal dark:hover:text-blue-500 transition-colors"
                 >رزرو خودرو</a
               >
             </div>
             <div>
-              <a href="#" class="font-Estedad text-[16px] font-normal"
+              <a
+                href="#"
+                class="font-Estedad text-[16px] font-normal dark:hover:text-blue-500 transition-colors"
                 >خدمات ما</a
               >
             </div>
             <div>
-              <a href="#" class="font-Estedad text-[16px] font-normal">بلاگ</a>
+              <a
+                href="#"
+                class="font-Estedad text-[16px] font-normal dark:hover:text-blue-500 transition-colors"
+                >بلاگ</a
+              >
             </div>
             <div>
-              <a href="#" class="font-Estedad text-[16px] font-normal"
+              <a
+                href="#"
+                class="font-Estedad text-[16px] font-normal dark:hover:text-blue-500 transition-colors"
                 >درباره ما</a
               >
             </div>
             <div>
-              <a href="#" class="font-Estedad text-[16px] font-normal"
+              <a
+                href="#"
+                class="font-Estedad text-[16px] font-normal dark:hover:text-blue-500 transition-colors"
                 >تماس با ما</a
               >
             </div>
             <div>
               <a href="#" class="font-Estedad text-[16px] font-normal"
                 ><img
-                  class="w-[19px] h-[19px]"
+                  class="w-[19px] h-[19px] dark:invert dark:opacity-80"
                   src="./src/images/Header/search.svg"
                   alt=""
               /></a>
@@ -126,40 +138,40 @@
           <!-- Mobile menu dropdown -->
           <div
             id="mobile-menu"
-            class="hidden lg:hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-bl-[16px] rounded-br-[16px] z-50"
+            class="hidden lg:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-900/50 rounded-bl-[16px] rounded-br-[16px] z-50"
           >
-            <div class="flex flex-col gap-y-4 p-4">
+            <div class="flex flex-col gap-y-3 p-4">
               <a
                 href="./plp.html"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 border-b border-gray-100"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 border-b border-gray-100 dark:border-gray-700"
                 >رزرو خودرو</a
               >
               <a
                 href="#"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 border-b border-gray-100"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 border-b border-gray-100 dark:border-gray-700"
                 >خدمات ما</a
               >
               <a
                 href="#"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 border-b border-gray-100"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 border-b border-gray-100 dark:border-gray-700"
                 >بلاگ</a
               >
               <a
                 href="#"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 border-b border-gray-100"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 border-b border-gray-100 dark:border-gray-700"
                 >درباره ما</a
               >
               <a
                 href="#"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 border-b border-gray-100"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 border-b border-gray-100 dark:border-gray-700"
                 >تماس با ما</a
               >
               <a
                 href="#"
-                class="font-Estedad text-[16px] font-normal text-[#353535] py-2 flex items-center gap-2"
+                class="font-Estedad text-[16px] font-normal text-[#353535] dark:text-gray-300 py-2 flex items-center gap-2"
               >
                 <img
-                  class="w-[19px] h-[19px]"
+                  class="w-[19px] h-[19px] dark:invert dark:opacity-80"
                   src="./src/images/Header/search.svg"
                   alt=""
                 />
@@ -227,7 +239,7 @@
       <!-- #endregion header -->
       <!-- #region rent-terms -->
       <div
-        class="w-[calc(100%-2rem)] md:w-full md:max-w-[1223px] h-auto md:h-[201px] mx-4 md:mx-auto p-4 md:p-5 bg-white border border-gray-300 rounded-2xl flex flex-col gap-4 relative md:absolute top-4 md:top-[580px] md:left-[7.5%]"
+        class="w-[calc(100%-2rem)] md:w-full md:max-w-[1223px] h-auto md:h-[201px] mx-4 md:mx-auto p-4 md:p-5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-2xl flex flex-col gap-4 relative md:absolute top-4 md:top-[580px] md:left-[7.5%]"
       >
         <!-- #region rent-terms-top -->
         <div
@@ -237,24 +249,24 @@
             class="w-full md:w-auto flex flex-col md:flex-row gap-2 md:gap-4"
           >
             <button
-              class="w-full md:w-32 h-10 bg-white border border-gray-300 rounded-full font-Estedad text-xs md:text-sm text-gray-900 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
+              class="w-full md:w-32 h-10 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full font-Estedad text-xs md:text-sm text-gray-900 dark:text-gray-200 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
             >
               اجاره خودرو با راننده
             </button>
             <button
-              class="w-full md:w-32 h-10 bg-white border border-gray-300 rounded-full font-Estedad text-xs md:text-sm text-gray-900 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
+              class="w-full md:w-32 h-10 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full font-Estedad text-xs md:text-sm text-gray-900 dark:text-gray-200 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
             >
               اجاره خودرو بی راننده
             </button>
             <button
-              class="w-full md:w-32 h-10 bg-white border border-gray-300 rounded-full font-Estedad text-xs md:text-sm text-gray-900 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
+              class="w-full md:w-32 h-10 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full font-Estedad text-xs md:text-sm text-gray-900 dark:text-gray-200 text-center leading-10 cursor-pointer transition duration-300 hover:bg-blue-600 hover:text-white"
             >
               اجاره ماشین عروس
             </button>
           </div>
           <a
             href="#"
-            class="w-full md:w-auto font-Estedad text-xs md:text-sm text-blue-600 text-center md:text-right font-medium hover:underline mt-2 md:mt-0"
+            class="w-full md:w-auto font-Estedad text-xs md:text-sm text-blue-600 dark:text-blue-400 text-center md:text-right font-medium hover:underline mt-2 md:mt-0"
             >اطلاعات بیشتر در مورد رزرو خودرو</a
           >
         </div>
@@ -265,9 +277,9 @@
             <img
               src="./src/images/Terms/arrow-left.svg"
               alt="arrow"
-              class="w-4 h-4 mt-0.5"
+              class="w-4 h-4 mt-0.5 dark:invert dark:opacity-80"
             />
-            <span class="font-Estedad text-sm text-gray-900"
+            <span class="font-Estedad text-sm text-gray-900 dark:text-gray-200"
               >محل تحویل خودرو</span
             >
           </div>
@@ -275,33 +287,41 @@
             <img
               src="./src/images/Terms/arrow-left.svg"
               alt="arrow"
-              class="w-4 h-4 mt-0.5"
+              class="w-4 h-4 mt-0.5 dark:invert dark:opacity-80"
             />
-            <span class="font-Estedad text-sm text-gray-900">تاریخ تحویل</span>
+            <span class="font-Estedad text-sm text-gray-900 dark:text-gray-200"
+              >تاریخ تحویل</span
+            >
           </div>
           <div class="w-[10%] mr-[15px] flex items-center gap-1 cursor-pointer">
             <img
               src="./src/images/Terms/arrow-left.svg"
               alt="arrow"
-              class="w-4 h-4 mt-0.5"
+              class="w-4 h-4 mt-0.5 dark:invert dark:opacity-80"
             />
-            <span class="font-Estedad text-sm text-gray-900">ساعت تحویل</span>
+            <span class="font-Estedad text-sm text-gray-900 dark:text-gray-200"
+              >ساعت تحویل</span
+            >
           </div>
           <div class="w-[10%] mr-[17px] flex items-center gap-1 cursor-pointer">
             <img
               src="./src/images/Terms/arrow-left.svg"
               alt="arrow"
-              class="w-4 h-4 mt-0.5"
+              class="w-4 h-4 mt-0.5 dark:invert dark:opacity-80"
             />
-            <span class="font-Estedad text-sm text-gray-900">تاریخ بازگشت</span>
+            <span class="font-Estedad text-sm text-gray-900 dark:text-gray-200"
+              >تاریخ بازگشت</span
+            >
           </div>
           <div class="w-[10%] mr-[20px] flex items-center gap-1 cursor-pointer">
             <img
               src="./src/images/Terms/arrow-left.svg"
               alt="arrow"
-              class="w-4 h-4 mt-0.5"
+              class="w-4 h-4 mt-0.5 dark:invert dark:opacity-80"
             />
-            <span class="font-Estedad text-sm text-gray-900">ساعت بازگشت</span>
+            <span class="font-Estedad text-sm text-gray-900 dark:text-gray-200"
+              >ساعت بازگشت</span
+            >
           </div>
         </div>
         <!-- #endregion rent-terms-center -->
@@ -309,11 +329,12 @@
         <!-- Mobile form -->
         <div class="md:hidden w-full flex flex-col gap-3">
           <div class="w-full">
-            <label class="font-Estedad text-xs text-gray-700 mb-1 block"
+            <label
+              class="font-Estedad text-xs text-gray-700 dark:text-gray-300 mb-1 block"
               >محل تحویل خودرو</label
             >
             <select
-              class="w-full h-10 bg-transparent border border-gray-200 rounded-lg px-3 font-Estedad text-sm text-gray-900 cursor-pointer focus:outline-none focus:border-blue-500"
+              class="w-full h-10 bg-transparent dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg px-3 font-Estedad text-sm text-gray-900 dark:text-gray-200 cursor-pointer focus:outline-none focus:border-blue-500 dark:focus:border-blue-400"
             >
               <option selected>تهران-فرودگاه امام خمینی</option>
               <option>تهران-فرودگاه مهرآباد</option>
@@ -323,85 +344,94 @@
           </div>
           <div class="flex gap-2">
             <div class="flex-1">
-              <label class="font-Estedad text-xs text-gray-700 mb-1 block"
+              <label
+                class="font-Estedad text-xs text-gray-700 dark:text-gray-300 mb-1 block"
                 >تاریخ تحویل</label
               >
               <div
-                class="flex items-center border border-gray-200 rounded-lg px-3 h-10"
+                class="flex items-center border border-gray-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg px-3 h-10"
               >
-                <span class="font-Estedad text-sm text-gray-900 flex-1"
+                <span
+                  class="font-Estedad text-sm text-gray-900 dark:text-gray-200 flex-1"
                   >1403,02,10</span
                 >
                 <img
                   src="./src/images/Terms/Vector.svg"
                   alt="calendar"
-                  class="w-4 h-4"
+                  class="w-4 h-4 dark:invert dark:opacity-80"
                 />
               </div>
             </div>
             <div class="flex-1">
-              <label class="font-Estedad text-xs text-gray-700 mb-1 block"
+              <label
+                class="font-Estedad text-xs text-gray-700 dark:text-gray-300 mb-1 block"
                 >ساعت تحویل</label
               >
               <div
-                class="flex items-center border border-gray-200 rounded-lg px-3 h-10"
+                class="flex items-center border border-gray-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg px-3 h-10"
               >
-                <span class="font-Estedad text-sm text-gray-900 flex-1"
+                <span
+                  class="font-Estedad text-sm text-gray-900 dark:text-gray-200 flex-1"
                   >07:00</span
                 >
                 <img
                   src="./src/images/Terms/clock.svg"
                   alt="clock"
-                  class="w-4 h-4"
+                  class="w-4 h-4 dark:invert dark:opacity-80"
                 />
               </div>
             </div>
           </div>
           <div class="flex gap-2">
             <div class="flex-1">
-              <label class="font-Estedad text-xs text-gray-700 mb-1 block"
+              <label
+                class="font-Estedad text-xs text-gray-700 dark:text-gray-300 mb-1 block"
                 >تاریخ بازگشت</label
               >
               <div
-                class="flex items-center border border-gray-200 rounded-lg px-3 h-10"
+                class="flex items-center border border-gray-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg px-3 h-10"
               >
-                <span class="font-Estedad text-sm text-gray-900 flex-1"
+                <span
+                  class="font-Estedad text-sm text-gray-900 dark:text-gray-200 flex-1"
                   >1403,02,10</span
                 >
                 <img
                   src="./src/images/Terms/Vector.svg"
                   alt="calendar"
-                  class="w-4 h-4"
+                  class="w-4 h-4 dark:invert dark:opacity-80"
                 />
               </div>
             </div>
             <div class="flex-1">
-              <label class="font-Estedad text-xs text-gray-700 mb-1 block"
+              <label
+                class="font-Estedad text-xs text-gray-700 dark:text-gray-300 mb-1 block"
                 >ساعت بازگشت</label
               >
               <div
-                class="flex items-center border border-gray-200 rounded-lg px-3 h-10"
+                class="flex items-center border border-gray-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg px-3 h-10"
               >
-                <span class="font-Estedad text-sm text-gray-900 flex-1"
+                <span
+                  class="font-Estedad text-sm text-gray-900 dark:text-gray-200 flex-1"
                   >07:00</span
                 >
                 <img
                   src="./src/images/Terms/clock.svg"
                   alt="clock"
-                  class="w-4 h-4"
+                  class="w-4 h-4 dark:invert dark:opacity-80"
                 />
               </div>
             </div>
           </div>
           <button
-            class="w-full h-12 bg-[#FDB713] flex items-center justify-center rounded-lg cursor-pointer transition duration-300 hover:bg-[#d4990f]"
+            class="w-full h-12 bg-[#FDB713] dark:bg-yellow-500 flex items-center justify-center rounded-lg cursor-pointer transition duration-300 hover:bg-[#d4990f] dark:hover:bg-yellow-600"
           >
             <img
               src="./src/images/Terms/search-normal.svg"
               alt="search"
               class="w-5 h-5 ml-2"
             />
-            <span class="font-Estedad text-sm font-medium text-gray-900"
+            <span
+              class="font-Estedad text-sm font-medium text-gray-900 dark:text-gray-900"
               >جستجو</span
             >
           </button>
@@ -409,12 +439,12 @@
 
         <!-- Desktop form -->
         <div
-          class="hidden md:flex w-full max-w-[1175px] h-[56px] flex-row items-center justify-between border border-gray-100 rounded-2xl box-border gap-4"
+          class="hidden md:flex w-full max-w-[1175px] h-[56px] flex-row items-center justify-between border border-gray-100 dark:border-gray-600 dark:bg-gray-700 rounded-2xl box-border gap-4"
         >
           <!-- #region location-select -->
           <div class="w-1/2 h-[28px]">
             <select
-              class="w-full h-8 bg-transparent border-none font-Estedad text-sm text-gray-900 cursor-pointer focus:outline-none"
+              class="w-full h-8 bg-transparent border-none font-Estedad text-sm text-gray-900 dark:text-gray-200 cursor-pointer focus:outline-none"
             >
               <option selected>تهران-فرودگاه امام خمینی</option>
               <option>تهران-فرودگاه مهرآباد</option>
@@ -422,51 +452,68 @@
               <option>تهران-سعادت آباد</option>
             </select>
           </div>
-          <div class="grayline h-[32px] border-[1px] border-[#D7D7D7]"></div>
+          <div
+            class="grayline h-[32px] border-[1px] border-[#D7D7D7] dark:border-gray-600"
+          ></div>
           <!-- #endregion location-select -->
           <!-- #region delivery-date -->
           <div class="w-[111px] h-[31px] flex items-center justify-between">
             <span
-              class="font-Estedad text-center flex items-center text-gray-900 w-[73px] h-[28px]"
+              class="font-Estedad text-center flex items-center text-gray-900 dark:text-gray-200 w-[73px] h-[28px]"
               >1403,02,10</span
             >
             <img
               src="./src/images/Terms/Vector.svg"
               alt="calendar"
-              class="w-5 h-5 flex"
+              class="w-5 h-5 flex dark:invert dark:opacity-80"
             />
           </div>
-          <div class="grayline h-[32px] border-[1px] border-[#D7D7D7]"></div>
+          <div
+            class="grayline h-[32px] border-[1px] border-[#D7D7D7] dark:border-gray-600"
+          ></div>
           <!-- #endregion delivery-date -->
           <!-- #region delivery-time -->
           <div class="w-[106px] h-[31px] flex items-center justify-between">
-            <span class="font-Estedad text-base text-gray-900">07:00</span>
+            <span
+              class="font-Estedad text-base text-gray-900 dark:text-gray-200"
+              >07:00</span
+            >
             <img
               src="./src/images/Terms/clock.svg"
               alt="clock"
-              class="w-5 h-5"
+              class="w-5 h-5 dark:invert dark:opacity-80"
             />
           </div>
-          <div class="grayline h-[32px] border-[1px] border-[#D7D7D7]"></div>
+          <div
+            class="grayline h-[32px] border-[1px] border-[#D7D7D7] dark:border-gray-600"
+          ></div>
           <!-- #endregion delivery-time -->
           <!-- #region return-date -->
           <div class="w-[111px] h-[31px] flex items-center justify-between">
-            <span class="font-Estedad text-base text-gray-900">1403,02,10</span>
+            <span
+              class="font-Estedad text-base text-gray-900 dark:text-gray-200"
+              >1403,02,10</span
+            >
             <img
               src="./src/images/Terms/Vector.svg"
               alt="calendar"
-              class="w-5 h-5"
+              class="w-5 h-5 dark:invert dark:opacity-80"
             />
           </div>
-          <div class="grayline h-[32px] border-[1px] border-[#D7D7D7]"></div>
+          <div
+            class="grayline h-[32px] border-[1px] border-[#D7D7D7] dark:border-gray-600"
+          ></div>
           <!-- #endregion return-date -->
           <!-- #region return-time -->
           <div class="w-[106px] h-[31px] flex items-center justify-between">
-            <span class="font-Estedad text-base text-gray-900">07:00</span>
+            <span
+              class="font-Estedad text-base text-gray-900 dark:text-gray-200"
+              >07:00</span
+            >
             <img
               src="./src/images/Terms/clock.svg"
               alt="clock"
-              class="w-5 h-5"
+              class="w-5 h-5 dark:invert dark:opacity-80"
             />
           </div>
           <!-- #endregion return-time -->
@@ -487,10 +534,10 @@
       <!-- #endregion rent-terms -->
       <!-- #region car-brands -->
       <div
-        class="cars-brand w-full marquee mt-[60px] md:mt-[145px] mb-[24px] md:mb-[47px] opacity-[35%]"
+        class="cars-brand w-full marquee mt-[60px] md:mt-[145px] mb-[24px] md:mb-[47px] opacity-[35%] dark:opacity-[50%]"
       >
         <div
-          class="cars-pic marquee__track h-[60px] md:h-[80px] flex gap-[28px] md:gap-[56px] flex-row items-center grayscale-100"
+          class="cars-pic marquee__track h-[60px] md:h-[80px] flex gap-[28px] md:gap-[56px] flex-row items-center grayscale-100 dark:grayscale-100 dark:opacity-70"
         >
           <div class="cars w-[60px] md:w-[99.58px] h-[30px] md:h-[50px]">
             <img
@@ -590,7 +637,7 @@
           </div>
           <div class="w-full md:w-full h-auto md:h-[96px] md:mt-[15px]">
             <p
-              class="w-full md:h-full font-Estedad text-[#FFFFFF] text-center text-[15px] md:text-[18px] font-normal leading-[1.6] md:leading-normal"
+              class="w-full md:h-full font-Estedad text-[#FFFFFF] dark:text-gray-100 text-center text-[15px] md:text-[18px] font-normal leading-[1.6] md:leading-normal"
             >
               اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا
               در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
@@ -611,20 +658,20 @@
           >
             <!-- #region delivery -->
             <div
-              class="delivery w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] justify-center items-center mx-auto border-[1px] border-[#D7D7D7]"
+              class="delivery w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] justify-center items-center mx-auto border-[1px] border-[#D7D7D7] dark:border-gray-600"
             >
               <div
-                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] dark:border-blue-400 rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br md:bg-none dark:bg-gray-700"
               >
                 <img
                   src="./src/images/Image-Text/Box.svg"
                   alt=""
-                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px]"
+                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px] dark:invert dark:opacity-90"
                 />
               </div>
               <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
                 <p
-                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] dark:text-gray-200 font-bold text-center"
                 >
                   تحویل در محل
                 </p>
@@ -633,7 +680,7 @@
                 class="w-full md:w-full h-auto md:h-[44px] flex px-1 md:px-0"
               >
                 <p
-                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] dark:text-gray-400 text-center leading-[1.5] md:leading-[180%] md:flex"
                 >
                   تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
                 </p>
@@ -643,27 +690,27 @@
 
             <!-- #region support -->
             <div
-              class="all_time_support w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto border-[1px] border-[#D7D7D7]"
+              class="all_time_support w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto border-[1px] border-[#D7D7D7] dark:border-gray-600"
             >
               <div
-                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] dark:border-blue-400 rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br md:bg-none dark:bg-gray-700"
               >
                 <img
                   src="./src/images/Image-Text/24-support.svg"
                   alt=""
-                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px]"
+                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px] dark:invert dark:opacity-90"
                 />
               </div>
               <div class="w-auto md:w-[129px] h-auto md:h-[22px] mx-auto">
                 <p
-                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] dark:text-gray-200 font-bold text-center"
                 >
                   پشتیبانی 24 ساعته
                 </p>
               </div>
               <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
                 <p
-                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] dark:text-gray-400 text-center leading-[1.5] md:leading-[180%] md:flex"
                 >
                   کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
                 </p>
@@ -673,27 +720,27 @@
 
             <!-- #region best_price-->
             <div
-              class="best_price w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto border-[1px] border-[#D7D7D7]"
+              class="best_price w-full max-w-[312px] md:w-[312px] h-auto md:h-[186px] rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 shadow-md md:shadow-none box-border px-[18px] md:px-[24px] py-[20px] md:py-[16px] flex flex-col gap-y-[12px] md:gap-y-[8px] items-center mx-auto border-[1px] border-[#D7D7D7] dark:border-gray-600"
             >
               <div
-                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br from-blue-50 to-blue-100 md:bg-none"
+                class="w-[64px] md:w-[72px] h-[64px] md:h-[72px] flex mx-auto items-center justify-center border-[1px] border-[#08237D] dark:border-blue-400 rounded-[12px] gap-[8px] md:gap-[8px] p-[10px] md:p-[12px] bg-gradient-to-br md:bg-none dark:bg-gray-700"
               >
                 <img
                   src="./src/images/Image-Text/wallet-minus.svg"
                   alt=""
-                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px]"
+                  class="w-[48px] h-[48] md:w-[48px] md:h-[48px] dark:invert dark:opacity-90"
                 />
               </div>
               <div class="w-auto md:w-[92px] h-auto md:h-[22px] mx-auto">
                 <p
-                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] font-bold text-center"
+                  class="font-Estedad text-[15px] md:text-[16px] text-[#414141] dark:text-gray-200 font-bold text-center"
                 >
                   قیمت مناسب
                 </p>
               </div>
               <div class="w-full md:w-full h-auto md:h-[44px] px-1 md:px-0">
                 <p
-                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] text-center leading-[1.5] md:leading-[180%] md:flex"
+                  class="font-Estedad text-[12px] md:text-[12px] text-[#757575] dark:text-gray-400 text-center leading-[1.5] md:leading-[180%] md:flex"
                 >
                   هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
                 </p>
@@ -711,14 +758,14 @@
       >
         <!-- #region car-coupe -->
         <div
-          class="relative rounded-xl md:rounded-2xl border border-gray-300 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+          class="relative rounded-xl md:rounded-2xl border border-gray-300 dark:border-gray-600 dark:bg-gray-800 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
         >
           <div class="absolute inset-0 z-20 pointer-events-none">
             <div class="shine-effect"></div>
           </div>
 
           <div
-            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
+            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 dark:bg-yellow-500 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
           ></div>
 
           <a
@@ -726,7 +773,7 @@
             class="w-full h-8 md:h-11 mt-1 md:mt-2 flex justify-center"
           >
             <p
-              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 font-bold text-center relative z-10 group-hover:text-[#353535] transition-colors duration-300"
+              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 dark:text-gray-400 font-bold text-center relative z-10 group-hover:text-[#353535] dark:group-hover:text-gray-200 transition-colors duration-300"
             >
               کوپه
             </p>
@@ -747,14 +794,14 @@
         <!-- #endregion car-coupe -->
         <!-- #region car-sedan -->
         <div
-          class="relative rounded-xl md:rounded-2xl border border-gray-300 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+          class="relative rounded-xl md:rounded-2xl border border-gray-300 dark:border-gray-600 dark:bg-gray-800 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
         >
           <div class="absolute inset-0 z-20 pointer-events-none">
             <div class="shine-effect"></div>
           </div>
 
           <div
-            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
+            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 dark:bg-yellow-500 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
           ></div>
 
           <a
@@ -762,7 +809,7 @@
             class="w-full h-8 md:h-11 mt-1 md:mt-2 flex justify-center"
           >
             <p
-              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 font-bold text-center relative z-10 group-hover:text-[#353535] transition-colors duration-300"
+              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 dark:text-gray-400 font-bold text-center relative z-10 group-hover:text-[#353535] dark:group-hover:text-gray-200 transition-colors duration-300"
             >
               سدان
             </p>
@@ -782,14 +829,14 @@
         <!-- #endregion car-sedan -->
         <!-- #region car-convertible -->
         <div
-          class="relative rounded-xl md:rounded-2xl border border-gray-300 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+          class="relative rounded-xl md:rounded-2xl border border-gray-300 dark:border-gray-600 dark:bg-gray-800 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
         >
           <div class="absolute inset-0 z-20 pointer-events-none">
             <div class="shine-effect"></div>
           </div>
 
           <div
-            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
+            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 dark:bg-yellow-500 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
           ></div>
 
           <a
@@ -797,7 +844,7 @@
             class="w-full h-8 md:h-11 mt-1 md:mt-2 flex justify-center"
           >
             <p
-              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 font-bold text-center relative z-10 group-hover:text-[#353535] transition-colors duration-300"
+              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 dark:text-gray-400 font-bold text-center relative z-10 group-hover:text-[#353535] dark:group-hover:text-gray-200 transition-colors duration-300"
             >
               کروک
             </p>
@@ -817,14 +864,14 @@
         <!-- #endregion car-convertible -->
         <!-- #region car-suv -->
         <div
-          class="relative rounded-xl md:rounded-2xl border border-gray-300 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+          class="relative rounded-xl md:rounded-2xl border border-gray-300 dark:border-gray-600 dark:bg-gray-800 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
         >
           <div class="absolute inset-0 z-20 pointer-events-none">
             <div class="shine-effect"></div>
           </div>
 
           <div
-            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
+            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 dark:bg-yellow-500 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
           ></div>
 
           <a
@@ -832,7 +879,7 @@
             class="w-full h-8 md:h-11 mt-1 md:mt-2 flex justify-center"
           >
             <p
-              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 font-bold text-center relative z-10 group-hover:text-[#353535] transition-colors duration-300"
+              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 dark:text-gray-400 font-bold text-center relative z-10 group-hover:text-[#353535] dark:group-hover:text-gray-200 transition-colors duration-300"
             >
               شاسی بلند
             </p>
@@ -852,7 +899,7 @@
         <!-- #endregion car-suv -->
         <!-- #region car-sport -->
         <div
-          class="relative rounded-xl md:rounded-2xl border border-gray-300 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+          class="relative rounded-xl md:rounded-2xl border border-gray-300 dark:border-gray-600 dark:bg-gray-800 flex flex-col h-32 md:h-36 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
         >
           <div class="absolute inset-0 z-20 pointer-events-none">
             <div class="shine-effect"></div>
@@ -860,7 +907,7 @@
 
           <!-- Background Slide -->
           <div
-            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
+            class="absolute inset-x-0 bottom-0 h-full bg-yellow-400 dark:bg-yellow-500 rounded-t-lg transform translate-y-[95%] group-hover:translate-y-[70%] transition-transform duration-300 ease-linear"
           ></div>
 
           <a
@@ -868,7 +915,7 @@
             class="w-full h-8 md:h-11 mt-1 md:mt-2 flex justify-center"
           >
             <p
-              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 font-bold text-center relative z-10 group-hover:text-[#353535] transition-colors duration-300"
+              class="font-Estedad text-sm md:text-lg lg:text-xl text-[#353535]/50 dark:text-gray-400 font-bold text-center relative z-10 group-hover:text-[#353535] dark:group-hover:text-gray-200 transition-colors duration-300"
             >
               اسپرت
             </p>
@@ -895,7 +942,7 @@
         <!-- #region inventory-intro-top -->
         <div class="w-full md:w-[30%] h-auto md:h-[43px] mx-auto">
           <p
-            class="font-Estedad text-[18px] md:text-[23px] text-[#5E5E5E] text-center font-extralight"
+            class="font-Estedad text-[18px] md:text-[23px] text-[#5E5E5E] dark:text-gray-400 text-center font-extralight"
           >
             مشاهده موجودی خودروها
           </p>
@@ -903,7 +950,7 @@
         <!-- #endregion inventory-intro-top -->
         <!-- #region inventory-intro-bottom -->
         <div
-          class="w-full h-auto md:h-[58px] flex items-center justify-center font-Estedad font-extrabold text-[24px] md:text-[37px] text-[#353535] gap-x-[15px] text-center flex-wrap"
+          class="w-full h-auto md:h-[58px] flex items-center justify-center font-Estedad font-extrabold text-[24px] md:text-[37px] text-[#353535] dark:text-gray-200 gap-x-[15px] text-center flex-wrap"
         >
           <p>رزرو خودرو در</p>
           <p class="text-[#D79C10]">اُتـــورِنت</p>
@@ -956,7 +1003,7 @@
         >
           <a
             href="#"
-            class="w-auto md:w-[102px] h-[32px] block no-underline font-Estedad font-semibold text-[14px] sm:text-[16px] md:text-[18px] text-[#194BF0] hover:text-[#1635c7] transition-colors duration-300 leading-[32px]"
+            class="w-auto md:w-[102px] h-[32px] block no-underline font-Estedad font-semibold text-[14px] sm:text-[16px] md:text-[18px] text-[#194BF0] dark:text-blue-500 hover:text-[#1635c7] dark:hover:text-blue-500 transition-colors duration-300 leading-[32px]"
           >
             مشاهده همه
           </a>
@@ -966,7 +1013,7 @@
             ><img
               src="./src/images/Reserve-Cars/arrow-left.svg"
               alt=""
-              class="w-full h-full object-contain"
+              class="w-full h-full object-contain dark:invert dark:opacity-80"
             />
           </a>
         </div>
@@ -979,15 +1026,21 @@
       <div class="grid grid-cols-2 gap-[16px] px-4 mt-[24px] md:hidden">
         <!-- #region Mobile Card 1 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/E350.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/E350.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
               <div
-                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
               >
                 ٪۲۰
               </div>
@@ -996,61 +1049,65 @@
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره بنز E350 سدان
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1060,20 +1117,22 @@
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
             <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
             <div class="flex-shrink-0">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1083,73 +1142,83 @@
         <!-- #endregion Mobile Card 1-->
         <!-- #region Mobile Card 2 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/Land.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/Land.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
             </div>
             <div
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره تویوتا لندکروز در تهران 2013
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1159,20 +1228,22 @@
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
             <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
             <div class="flex-shrink-0">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1182,15 +1253,21 @@
         <!-- #endregion Mobile Card 2 -->
         <!-- #region Mobile Card 3 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/Genesis.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/Genesis.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
               <div
-                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
               >
                 ٪۲۰
               </div>
@@ -1199,61 +1276,65 @@
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره جنسیس کوپه
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1263,20 +1344,22 @@
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
             <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
             <div class="flex-shrink-0">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1286,73 +1369,83 @@
         <!-- #endregion Mobile Card 3 -->
         <!-- #region Mobile Card 4 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/Bmw528.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/Bmw528.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
             </div>
             <div
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره بی ام و 528
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1362,20 +1455,22 @@
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
             <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
             <div class="flex-shrink-0">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1385,15 +1480,21 @@
         <!-- #endregion Mobile Card 4 -->
         <!-- #region Mobile Card 5 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/Tucson.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/Tucson.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
               <div
-                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
               >
                 ٪۲۰
               </div>
@@ -1402,61 +1503,65 @@
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره هیوندای توسان 2014
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
               <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
               <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1466,20 +1571,22 @@
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
             <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
             <div class="flex-shrink-0">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1489,73 +1596,83 @@
         <!-- #endregion Mobile Card 5 -->
         <!-- #region Mobile Card 6 -->
         <div
-          class="border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
+          class="border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] box-border p-[12px] flex flex-col gap-y-[6px]"
         >
           <div
-            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+            class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
           >
-            <div class="w-full relative bg-cover top-0">
-              <img src="./src/images/Reserve-Cars/Maserati.jpg" alt="" />
+            <div
+              class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+            >
+              <img
+                src="./src/images/Reserve-Cars/Maserati.jpg"
+                alt=""
+                class="rounded-[14px]"
+              />
             </div>
             <div
               class="w-full h-auto flex flex-col gap-y-[4px] mb-[4px] relative"
             >
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[13px] text-[#0C0C0C] font-bold">
+                <p
+                  class="font-Estedad text-[13px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                >
                   اجاره بنز sl کروک
                 </p>
               </div>
               <div class="w-full h-auto">
-                <p class="font-Estedad text-[10px] text-[#494949] font-normal">
+                <p
+                  class="font-Estedad text-[10px] text-[#494949] dark:text-gray-400 font-normal"
+                >
                   مدل:2016
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   روزانه
                 </p>
               </div>
             </div>
             <div
-              class="w-full h-auto bg-[#F3F3F3] rounded-[6px] p-[6px] flex items-center gap-x-[4px] mb-[6px] justify-center"
+              class="w-full h-auto bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] p-[6px] flex items-center gap-x-[2px] mb-[6px] justify-between"
             >
-              <div class="w-[25%] h-auto">
+              <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#212121] leading-[16px]"
+                  class="font-Estedad text-[9px] text-[#212121] dark:text-gray-300 leading-[16px]"
                 >
                   از ۱ تا 30 روز:
                 </p>
               </div>
-              <div class="w-[65%] h-auto">
+              <div class="flex-1 text-right">
                 <p
-                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] leading-[16px]"
+                  class="font-Estedad text-[12px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px]"
                 >
                   8,500,000
                 </p>
               </div>
-              <div class="w-[10%] h-auto">
+              <div class="flex-shrink-0">
                 <p
-                  class="font-Estedad text-[9px] text-[#494949] leading-[16px] text-center"
+                  class="font-Estedad text-[9px] text-[#494949] dark:text-gray-400 leading-[16px] text-center"
                 >
                   ماهانه
                 </p>
@@ -1563,22 +1680,24 @@
             </div>
           </div>
           <div class="w-full h-auto mt-[6px] flex items-center justify-between">
-            <div class="w-[40%] h-full">
+            <div class="flex-shrink-0">
               <p
-                class="font-Estedad text-[10px] text-[#212121] font-medium leading-[16px]"
+                class="font-Estedad text-[10px] text-[#212121] dark:text-gray-300 font-medium leading-[16px]"
               >
                 مبلغ ضمانت:
               </p>
             </div>
-            <div class="w-[55%] h-full">
-              <p class="font-Estedad font-bold text-[10px] text-[#212121]">
+            <div class="flex-shrink-0">
+              <p
+                class="font-Estedad font-bold text-[10px] text-[#212121] dark:text-gray-300"
+              >
                 80 میلیون تومان
               </p>
             </div>
           </div>
           <a
             href="#"
-            class="w-full h-[32px] flex bg-[#194BF0] rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+            class="w-full h-[32px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] mt-[6px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
           >
             <p class="font-Estedad text-[#ffffff] text-[11px] font-semibold">
               درخواست رزرو
@@ -1596,17 +1715,23 @@
         <div class="home-main-top flex flex-row w-full gap-x-[24px] gap-y-0">
           <!-- #region car-card-1 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/E350.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/E350.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
                 <div
-                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
                 >
                   ٪۲۰
                 </div>
@@ -1619,14 +1744,14 @@
               >
                 <div class="w-full h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[13px] md:text-[16px] text-[#0C0C0C] font-bold"
+                    class="font-Estedad text-[13px] md:text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
                   >
                     اجاره بنز E350 سدان
                   </p>
                 </div>
                 <div class="w-full h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[10px] md:text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[10px] md:text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -1636,25 +1761,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -1664,25 +1789,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -1698,14 +1823,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -1716,7 +1841,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -1729,15 +1854,21 @@
 
           <!-- #region car-card-2 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[10px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[10px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/Land.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/Land.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
               </div>
               <!-- #endregion car-card-image -->
 
@@ -1747,14 +1878,14 @@
               >
                 <div class="w-full h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[13px] md:text-[16px] text-[#0C0C0C] font-bold"
+                    class="font-Estedad text-[13px] md:text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
                   >
                     اجاره تویوتا لندکروز در تهران 2013
                   </p>
                 </div>
                 <div class="w-full h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[10px] md:text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[10px] md:text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -1764,25 +1895,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -1792,25 +1923,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -1826,14 +1957,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -1844,7 +1975,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -1857,17 +1988,23 @@
 
           <!-- #region car-card-3 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[10px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[10px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/Genesis.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/Genesis.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
                 <div
-                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
                 >
                   ٪۲۰
                 </div>
@@ -1877,13 +2014,15 @@
               <!-- #region car-card-info -->
               <div class="w-full h-[52px] flex flex-col gap-y-[8px] relative">
                 <div class="w-full h-[22px]">
-                  <p class="font-Estedad text-[16px] text-[#0C0C0C] font-bold">
+                  <p
+                    class="font-Estedad text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                  >
                     اجاره جنسیس کوپه
                   </p>
                 </div>
                 <div class="w-full h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -1893,25 +2032,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -1921,25 +2060,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -1955,14 +2094,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -1973,7 +2112,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -1991,15 +2130,21 @@
         >
           <!-- #region car-card-4 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[8px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[8px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/Bmw528.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/Bmw528.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
               </div>
               <!-- #endregion car-card-image -->
 
@@ -2008,13 +2153,15 @@
                 class="w-full h-[52px] flex flex-col gap-y-[8px] mb-[6px] relative"
               >
                 <div class="w-full h-[22px]">
-                  <p class="font-Estedad text-[16px] text-[#0C0C0C] font-bold">
+                  <p
+                    class="font-Estedad text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                  >
                     اجاره بی ام و 528
                   </p>
                 </div>
                 <div class="w-full h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -2024,25 +2171,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -2052,25 +2199,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -2086,14 +2233,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -2104,7 +2251,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -2117,17 +2264,23 @@
 
           <!-- #region car-card-5 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[10px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[10px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/Tucson.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/Tucson.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
                 <div
-                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
+                  class="w-[32px] h-[29px] rounded-[8px] bg-[#08237D] dark:bg-blue-600 absolute px-[4px] top-0 left-0 font-Estedad text-[14px] text-[#FFFFFF] text-center leading-[29px]"
                 >
                   ٪۲۰
                 </div>
@@ -2137,13 +2290,15 @@
               <!-- #region car-card-info -->
               <div class="w-full h-[52px] flex flex-col gap-y-[8px] relative">
                 <div class="w-full h-[22px]">
-                  <p class="font-Estedad text-[16px] text-[#0C0C0C] font-bold">
+                  <p
+                    class="font-Estedad text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                  >
                     اجاره هیوندای توسان 2014
                   </p>
                 </div>
                 <div class="w-full h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -2153,25 +2308,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -2181,25 +2336,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -2215,14 +2370,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -2233,7 +2388,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -2246,28 +2401,36 @@
 
           <!-- #region car-card-6 -->
           <div
-            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] bg-[#FFFFFF] rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
+            class="car-offer-cart-1 w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 bg-[#FFFFFF] dark:bg-gray-800 rounded-[12px] md:rounded-[16px] box-border p-[12px] md:p-[16px] flex flex-col gap-y-[6px] md:gap-y-[8px]"
           >
             <!-- #region car-card-top -->
             <div
-              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] gap-y-[10px]"
+              class="w-full h-full flex flex-col border-b-[1px] border-[#D7D7D7] dark:border-gray-600 gap-y-[10px]"
             >
               <!-- #region car-card-image -->
-              <div class="w-full relative bg-cover top-0">
-                <img src="./src/images/Reserve-Cars/Maserati.jpg" alt="" />
+              <div
+                class="w-full relative bg-cover top-0 dark:bg-gray-100 rounded-[14px] overflow-hidden"
+              >
+                <img
+                  src="./src/images/Reserve-Cars/Maserati.jpg"
+                  alt=""
+                  class="rounded-[14px]"
+                />
               </div>
               <!-- #endregion car-card-image -->
 
               <!-- #region car-card-info -->
               <div class="w-full h-[52px] flex flex-col gap-y-[8px] relative">
                 <div class="w-full h-[22px]">
-                  <p class="font-Estedad text-[16px] text-[#0C0C0C] font-bold">
+                  <p
+                    class="font-Estedad text-[16px] text-[#0C0C0C] dark:text-gray-200 font-bold"
+                  >
                     اجاره بنز sl کروک
                   </p>
                 </div>
                 <div class="w-full h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] text-[#494949] font-normal"
+                    class="font-Estedad text-[12px] text-[#494949] dark:text-gray-400 font-normal"
                   >
                     مدل:2016
                   </p>
@@ -2277,25 +2440,25 @@
 
               <!-- #region car-card-daily-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     روزانه
                   </p>
@@ -2305,25 +2468,25 @@
 
               <!-- #region car-card-monthly-price -->
               <div
-                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
+                class="w-full h-auto md:h-[44px] bg-[#F3F3F3] dark:bg-gray-700 rounded-[6px] md:rounded-[8px] p-[6px] md:p-[8px] flex items-center gap-x-[4px] md:gap-x-[8px] mb-[6px] md:mb-[8px] justify-center"
               >
                 <div class="w-[25%] md:w-[20%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#212121] dark:text-gray-300 leading-[16px] md:leading-[24px]"
                   >
                     از ۱ تا 30 روز:
                   </p>
                 </div>
                 <div class="w-[65%] md:w-[70%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] leading-[16px] md:leading-[24px]"
+                    class="font-Estedad text-[12px] md:text-[16px] font-bold text-right text-[#194BF0] dark:text-blue-500 leading-[16px] md:leading-[24px]"
                   >
                     8,500,000
                   </p>
                 </div>
                 <div class="w-[10%] md:w-[8%] h-auto md:h-[22px]">
                   <p
-                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] leading-[16px] md:leading-[24px] text-center"
+                    class="font-Estedad text-[9px] md:text-[12px] text-[#494949] dark:text-gray-400 leading-[16px] md:leading-[24px] text-center"
                   >
                     ماهانه
                   </p>
@@ -2339,14 +2502,14 @@
             >
               <div class="w-[40%] md:w-[19%] h-full">
                 <p
-                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] font-medium leading-[16px] md:leading-[21px]"
+                  class="font-Estedad text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300 font-medium leading-[16px] md:leading-[21px]"
                 >
                   مبلغ ضمانت:
                 </p>
               </div>
               <div class="w-[55%] md:w-[24%] h-full">
                 <p
-                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121]"
+                  class="font-Estedad font-bold text-[10px] md:text-[12px] text-[#212121] dark:text-gray-300"
                 >
                   80 میلیون تومان
                 </p>
@@ -2357,7 +2520,7 @@
             <!-- #region car-card-cta -->
             <a
               href="#"
-              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] duration-300"
+              class="w-full h-[32px] md:h-[40px] flex bg-[#194BF0] dark:bg-blue-600 rounded-[6px] md:rounded-[8px] mt-[6px] md:mt-[8px] items-center justify-center hover:bg-[#194Ba0] dark:hover:bg-blue-700 duration-300"
               ><p
                 class="font-Estedad text-[#ffffff] text-[11px] md:text-[14px] font-semibold"
               >
@@ -2380,7 +2543,7 @@
         <!-- #region title_text-->
         <div class="w-full md:w-[46%] h-auto md:h-[42px] mx-auto">
           <p
-            class="font-Estedad font-normal text-[18px] md:text-[24px] text-[#5E5E5E] text-center"
+            class="font-Estedad font-normal text-[18px] md:text-[24px] text-[#5E5E5E] dark:text-gray-400 text-center"
           >
             چگونه در وبسایت
           </p>
@@ -2397,7 +2560,7 @@
             اُتـــورِنت،
           </div>
           <div
-            class="font-Estedad text-[24px] md:text-[32px] font-semibold text-[#353535]"
+            class="font-Estedad text-[24px] md:text-[32px] font-semibold text-[#353535] dark:text-gray-200"
           >
             خودرو رزرو کنیم؟
           </div>
@@ -2409,15 +2572,18 @@
       <div
         class="reservation-steps w-full md:w-[85%] mx-auto px-4 md:px-0 flex gap-y-[19px] flex-col md:flex-row items-center mt-[58px] md:mt-0"
       >
-        <!-- Step 1: انتخاب خودرو - Mobile Order 1 -->
+        <!-- Step 1 -->
         <div
           class="w-full md:hidden h-auto relative flex flex-col items-center order-1"
         >
           <!-- #region step_icon-->
           <div
-            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[12px]"
+            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px]"
           >
-            <img src="./src/images/Car-Reserve/car.svg" class="w-[30px]" />
+            <img
+              src="./src/images/Car-Reserve/car.svg"
+              class="w-[30px] dark:invert dark:opacity-90"
+            />
           </div>
           <!-- #endregion step_icon-->
 
@@ -2429,10 +2595,14 @@
               class="w-full h-auto font-Estedad flex text-[18px] font-bold gap-x-[5px] justify-center"
             >
               <p class="text-[#D79C10]">خودروی</p>
-              <p class="text-[#212121]">خود را انتخاب کنید.</p>
+              <p class="text-[#212121] dark:text-gray-200">
+                خود را انتخاب کنید.
+              </p>
             </div>
             <div class="w-full h-auto">
-              <p class="font-Estedad text-[14px] text-[#5E5E5E] text-center">
+              <p
+                class="font-Estedad text-[14px] text-[#5E5E5E] dark:text-gray-400 text-center"
+              >
                 خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.
               </p>
             </div>
@@ -2441,22 +2611,26 @@
 
           <!-- #region step_number-->
           <div class="w-[40px] h-[60px] absolute -top-[20px] right-[10px] flex">
-            <p class="font-Estedad text-[80px] text-black font-bold">1</p>
+            <p
+              class="font-Estedad text-[80px] text-black dark:text-gray-200 font-bold"
+            >
+              1
+            </p>
           </div>
           <!-- #endregion step_number-->
         </div>
 
-        <!-- Step 2: تعیین تاریخ - Mobile Order 2 -->
+        <!-- Step 2 -->
         <div
           class="w-full md:hidden h-auto relative flex flex-col items-center order-2"
         >
           <!-- #region step_icon-->
           <div
-            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[12px]"
+            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px]"
           >
             <img
               src="./src/images/Car-Reserve/calendar-tick.svg"
-              class="w-[30px]"
+              class="w-[30px] dark:invert dark:opacity-90"
             />
           </div>
           <!-- #endregion step_icon-->
@@ -2469,10 +2643,14 @@
               class="w-full h-auto font-Estedad flex text-[18px] font-bold gap-x-[5px] justify-center"
             >
               <p class="text-[#D79C10]">تاریخ</p>
-              <p class="text-[#212121]">تحویل را تعیین کنید.</p>
+              <p class="text-[#212121] dark:text-gray-200">
+                تحویل را تعیین کنید.
+              </p>
             </div>
             <div class="w-full h-auto">
-              <p class="font-Estedad text-[14px] text-[#5E5E5E] text-center">
+              <p
+                class="font-Estedad text-[14px] text-[#5E5E5E] dark:text-gray-400 text-center"
+              >
                 تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
               </p>
             </div>
@@ -2481,7 +2659,11 @@
 
           <!-- #region step_number-->
           <div class="w-[40px] h-[60px] absolute -top-[20px] left-[10px] flex">
-            <p class="font-Estedad text-[80px] text-black font-bold">2</p>
+            <p
+              class="font-Estedad text-[80px] text-black dark:text-gray-200 font-bold"
+            >
+              2
+            </p>
           </div>
           <!-- #endregion step_number-->
         </div>
@@ -2490,13 +2672,16 @@
         <div
           class="hidden md:flex md:w-1/3 items-center h-[750px] flex-col gap-y-[427px] order-1"
         >
-          <!-- Step 1: انتخاب خودرو -->
+          <!-- Step 1 -->
           <div class="w-full h-[92px] relative flex flex-row items-center">
             <!-- #region step_icon-->
             <div
-              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[16px]"
+              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[16px]"
             >
-              <img src="./src/images/Car-Reserve/car.svg" />
+              <img
+                src="./src/images/Car-Reserve/car.svg"
+                class="dark:invert dark:opacity-90"
+              />
             </div>
             <!-- #endregion step_icon-->
 
@@ -2508,10 +2693,14 @@
                 class="w-full h-[34px] font-Estedad flex text-[23px] font-bold gap-x-[5px] justify-start"
               >
                 <p class="text-[#D79C10]">خودروی</p>
-                <p class="text-[#212121]">خود را انتخاب کنید.</p>
+                <p class="text-[#212121] dark:text-gray-200">
+                  خود را انتخاب کنید.
+                </p>
               </div>
               <div class="w-[258px] h-[50px]">
-                <p class="font-Estedad text-[16px] text-[#5E5E5E] text-justify">
+                <p
+                  class="font-Estedad text-[16px] text-[#5E5E5E] dark:text-gray-400 text-justify"
+                >
                   خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.
                 </p>
               </div>
@@ -2522,18 +2711,25 @@
             <div
               class="w-[52px] h-[80px] absolute -top-[100px] right-[53px] flex"
             >
-              <p class="font-Estedad text-[152px] text-black font-bold">1</p>
+              <p
+                class="font-Estedad text-[152px] text-black dark:text-gray-200 font-bold"
+              >
+                1
+              </p>
             </div>
             <!-- #endregion step_number-->
           </div>
 
-          <!-- Step 3: پرداخت هزینه -->
+          <!-- Step 3 -->
           <div class="w-full h-[117px] flex relative flex-row items-center">
             <!-- #region step_icon-->
             <div
-              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[16px]"
+              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[16px]"
             >
-              <img src="./src/images/Car-Reserve/cards.svg" />
+              <img
+                src="./src/images/Car-Reserve/cards.svg"
+                class="dark:invert dark:opacity-90"
+              />
             </div>
             <!-- #endregion step_icon-->
 
@@ -2545,10 +2741,14 @@
                 class="w-full h-[34px] font-Estedad flex text-[23px] font-bold gap-x-[5px] justify-start"
               >
                 <p class="text-[#D79C10]">هزینه</p>
-                <p class="text-[#212121]">اجاره را پرداخت کنید.</p>
+                <p class="text-[#212121] dark:text-gray-200">
+                  اجاره را پرداخت کنید.
+                </p>
               </div>
               <div class="w-[258px] h-[75px]">
-                <p class="font-Estedad text-[16px] text-[#5E5E5E] text-justify">
+                <p
+                  class="font-Estedad text-[16px] text-[#5E5E5E] dark:text-gray-400 text-justify"
+                >
                   می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب
                   هزینه اجاره را پرداخت کنید.
                 </p>
@@ -2560,7 +2760,11 @@
             <div
               class="w-[112px] h-[80px] absolute -top-[90%] right-[-8px] flex"
             >
-              <p class="font-Estedad text-[152px] text-black font-bold">3</p>
+              <p
+                class="font-Estedad text-[152px] text-black dark:text-gray-200 font-bold"
+              >
+                3
+              </p>
             </div>
             <!-- #endregion step_number-->
           </div>
@@ -2578,15 +2782,18 @@
           />
         </div>
 
-        <!-- Step 3: پرداخت هزینه - Mobile Order 4 -->
+        <!-- Step 3 -->
         <div
           class="w-full md:hidden h-auto relative flex flex-col items-center order-4"
         >
           <!-- #region step_icon-->
           <div
-            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[12px]"
+            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px]"
           >
-            <img src="./src/images/Car-Reserve/cards.svg" class="w-[30px]" />
+            <img
+              src="./src/images/Car-Reserve/cards.svg"
+              class="w-[30px] dark:invert dark:opacity-90"
+            />
           </div>
           <!-- #endregion step_icon-->
 
@@ -2598,10 +2805,14 @@
               class="w-full h-auto font-Estedad flex text-[18px] font-bold gap-x-[5px] justify-center"
             >
               <p class="text-[#D79C10]">هزینه</p>
-              <p class="text-[#212121]">اجاره را پرداخت کنید.</p>
+              <p class="text-[#212121] dark:text-gray-200">
+                اجاره را پرداخت کنید.
+              </p>
             </div>
             <div class="w-full h-auto">
-              <p class="font-Estedad text-[14px] text-[#5E5E5E] text-center">
+              <p
+                class="font-Estedad text-[14px] text-[#5E5E5E] dark:text-gray-400 text-center"
+              >
                 می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب هزینه
                 اجاره را پرداخت کنید.
               </p>
@@ -2611,20 +2822,27 @@
 
           <!-- #region step_number-->
           <div class="w-[40px] h-[60px] absolute -top-[20px] right-[10px] flex">
-            <p class="font-Estedad text-[80px] text-black font-bold">3</p>
+            <p
+              class="font-Estedad text-[80px] text-black dark:text-gray-200 font-bold"
+            >
+              3
+            </p>
           </div>
           <!-- #endregion step_number-->
         </div>
 
-        <!-- Step 4: دریافت خودرو - Mobile Order 5 -->
+        <!-- Step 4 -->
         <div
           class="w-full md:hidden h-auto relative flex flex-col items-center order-5"
         >
           <!-- #region step_icon-->
           <div
-            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[12px]"
+            class="w-[60px] h-[60px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px]"
           >
-            <img src="./src/images/Car-Reserve/key.svg" class="w-[30px]" />
+            <img
+              src="./src/images/Car-Reserve/key.svg"
+              class="w-[30px] dark:invert dark:opacity-90"
+            />
           </div>
           <!-- #endregion step_icon-->
 
@@ -2636,10 +2854,12 @@
               class="w-full h-auto font-Estedad flex text-[18px] font-bold gap-x-[5px] justify-center"
             >
               <p class="text-[#D79C10]">خودرو</p>
-              <p class="text-[#212121]">را دریافت کنید.</p>
+              <p class="text-[#212121] dark:text-gray-200">را دریافت کنید.</p>
             </div>
             <div class="w-full h-auto">
-              <p class="font-Estedad text-[14px] text-[#5E5E5E] text-center">
+              <p
+                class="font-Estedad text-[14px] text-[#5E5E5E] dark:text-gray-400 text-center"
+              >
                 در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
               </p>
             </div>
@@ -2648,7 +2868,11 @@
 
           <!-- #region step_number-->
           <div class="w-[40px] h-[60px] absolute -top-[20px] left-[10px] flex">
-            <p class="font-Estedad text-[80px] text-black font-bold">4</p>
+            <p
+              class="font-Estedad text-[80px] text-black dark:text-gray-200 font-bold"
+            >
+              4
+            </p>
           </div>
           <!-- #endregion step_number-->
         </div>
@@ -2657,15 +2881,18 @@
         <div
           class="hidden md:flex md:w-1/3 h-[750px] flex-col gap-y-[427px] order-3"
         >
-          <!-- Step 2: تعیین تاریخ -->
+          <!-- Step 2 -->
           <div
             class="w-full h-[92px] relative flex flex-row-reverse items-center"
           >
             <!-- #region step_icon-->
             <div
-              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[16px]"
+              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[16px]"
             >
-              <img src="./src/images/Car-Reserve/calendar-tick.svg" />
+              <img
+                src="./src/images/Car-Reserve/calendar-tick.svg"
+                class="dark:invert dark:opacity-90"
+              />
             </div>
             <!-- #endregion step_icon-->
 
@@ -2675,10 +2902,14 @@
                 class="w-full h-[34px] font-Estedad flex text-[24px] font-bold gap-x-[5px] justify-start"
               >
                 <p class="text-[#D79C10]">تاریخ</p>
-                <p class="text-[#212121]">تحویل را تعیین کنید.</p>
+                <p class="text-[#212121] dark:text-gray-200">
+                  تحویل را تعیین کنید.
+                </p>
               </div>
               <div class="w-[220px] h-[50px]">
-                <p class="font-Estedad text-[16px] text-[#5E5E5E] text-justify">
+                <p
+                  class="font-Estedad text-[16px] text-[#5E5E5E] dark:text-gray-400 text-justify"
+                >
                   تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
                 </p>
               </div>
@@ -2689,20 +2920,27 @@
             <div
               class="w-[52px] h-[80px] absolute -top-[120%] -left-[-12px] flex"
             >
-              <p class="font-Estedad text-[152px] text-black font-bold">2</p>
+              <p
+                class="font-Estedad text-[152px] text-black dark:text-gray-200 font-bold"
+              >
+                2
+              </p>
             </div>
             <!-- #endregion step_number-->
           </div>
 
-          <!-- Step 4: دریافت خودرو -->
+          <!-- Step 4 -->
           <div
             class="w-full h-[117px] flex relative flex-row-reverse items-center"
           >
             <!-- #region step_icon-->
             <div
-              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white border-[1px] border-[#D7D7D7] rounded-[16px]"
+              class="w-[80px] h-[80px] flex justify-center items-center relative z-[10] bg-white dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[16px]"
             >
-              <img src="./src/images/Car-Reserve/key.svg" />
+              <img
+                src="./src/images/Car-Reserve/key.svg"
+                class="dark:invert dark:opacity-90"
+              />
             </div>
             <!-- #endregion step_icon-->
 
@@ -2712,10 +2950,12 @@
                 class="w-full h-[34px] font-Estedad flex text-[24px] font-bold gap-x-[5px] justify-start"
               >
                 <p class="text-[#D79C10]">خودرو</p>
-                <p class="text-[#212121]">را دریافت کنید.</p>
+                <p class="text-[#212121] dark:text-gray-200">را دریافت کنید.</p>
               </div>
               <div class="w-[258px] h-[50px]">
-                <p class="font-Estedad text-[16px] text-[#5E5E5E] text-justify">
+                <p
+                  class="font-Estedad text-[16px] text-[#5E5E5E] dark:text-gray-400 text-justify"
+                >
                   در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
                 </p>
               </div>
@@ -2726,7 +2966,11 @@
             <div
               class="w-[112px] h-[80px] absolute -top-[100%] -left-[43px] flex"
             >
-              <p class="font-Estedad text-[152px] text-black font-bold">4</p>
+              <p
+                class="font-Estedad text-[152px] text-black dark:text-gray-200 font-bold"
+              >
+                4
+              </p>
             </div>
             <!-- #endregion step_number-->
           </div>
@@ -2740,7 +2984,7 @@
       >
         <!-- #region text_top-->
         <div
-          class="w-full md:w-[36%] h-auto md:h-[42px] mx-auto font-Estedad text-[16px] md:text-[23px] text-[#5E5E5E] text-center leading-relaxed"
+          class="w-full md:w-[36%] h-auto md:h-[42px] mx-auto font-Estedad text-[16px] md:text-[23px] text-[#5E5E5E] dark:text-gray-400 text-center leading-relaxed"
         >
           پر تکرارترین سؤالاتی که پرسیدید
         </div>
@@ -2751,7 +2995,7 @@
           class="w-full h-auto md:h-[45px] flex gap-x-[5px] items-center justify-center mb-0"
         >
           <p
-            class="font-Estedad text-[24px] md:text-[32px] text-[#353535] font-bold"
+            class="font-Estedad text-[24px] md:text-[32px] text-[#353535] dark:text-gray-200 font-bold"
           >
             سؤالات
           </p>
@@ -2774,7 +3018,7 @@
         >
           <!-- #region FAQ Accordion Item 1 -->
           <div
-            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] bg-gradient-to-r from-[#ffffff] to-[#f9fafb] hover:shadow-lg transition-all duration-300 ease-in-out group"
+            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] dark:border-gray-600 bg-gradient-to-r from-[#ffffff] to-[#f9fafb] dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300 ease-in-out group"
           >
             <input
               type="radio"
@@ -2783,14 +3027,14 @@
               checked="checked"
             />
             <div
-              class="collapse-title font-Estedad text-[#1F2937] text-[15px] md:text-[17px] py-4 md:py-[16px] px-4 md:px-6 hover:text-[#194BF0] transition-colors duration-200 cursor-pointer relative"
+              class="collapse-title font-Estedad text-[#1F2937] dark:text-gray-200 text-[15px] md:text-[17px] py-4 md:py-[16px] px-4 md:px-6 hover:text-[#194BF0] dark:hover:text-blue-500 transition-colors duration-200 cursor-pointer relative"
             >
               <div class="flex items-center justify-between">
                 <div
-                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] dark:border-blue-400 rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
                 >
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 plus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 plus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2803,7 +3047,7 @@
                     />
                   </svg>
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 minus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 minus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2824,7 +3068,7 @@
               </div>
             </div>
             <div
-              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#727272] leading-[180%] pb-4 md:pb-6 px-4 md:px-6 border-t border-[#F3F4F6] bg-[#FAFBFC]"
+              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#727272] dark:text-gray-400 leading-[180%] pb-4 md:pb-6 px-4 md:px-6 border-t border-[#F3F4F6] dark:border-gray-600 bg-[#FAFBFC] dark:bg-gray-800"
             >
               <div>
                 تیم فنی سریع به محل می‌آید، خودرو را تعمیر یا تعویض می‌کند و در
@@ -2837,18 +3081,18 @@
 
           <!-- #region FAQ Accordion Item 2 -->
           <div
-            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] bg-gradient-to-r from-[#ffffff] to-[#f9fafb] hover:shadow-lg transition-all duration-300 ease-in-out group"
+            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] dark:border-gray-600 bg-gradient-to-r from-[#ffffff] to-[#f9fafb] dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300 ease-in-out group"
           >
             <input type="radio" name="faq-accordion" id="faq-2" />
             <div
-              class="collapse-title font-Estedad text-[#1F2937] text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] transition-colors duration-200 cursor-pointer relative"
+              class="collapse-title font-Estedad text-[#1F2937] dark:text-gray-200 text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] dark:hover:text-blue-500 transition-colors duration-200 cursor-pointer relative"
             >
               <div class="flex items-center justify-between">
                 <div
-                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] dark:border-blue-400 rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
                 >
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 plus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 plus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2861,7 +3105,7 @@
                     />
                   </svg>
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 minus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 minus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2882,7 +3126,7 @@
               </div>
             </div>
             <div
-              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#6B7280] leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] bg-[#FAFBFC]"
+              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#6B7280] dark:text-gray-400 leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] dark:border-gray-600 bg-[#FAFBFC] dark:bg-gray-800"
             >
               <div>
                 در زمان اجاره خودرو، خودروها کارواش شده و با باک بنزین پر تحویل
@@ -2896,18 +3140,18 @@
 
           <!-- #region FAQ Accordion Item 3 -->
           <div
-            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] bg-gradient-to-r from-[#ffffff] to-[#f9fafb] hover:shadow-lg transition-all duration-300 ease-in-out group"
+            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] dark:border-gray-600 bg-gradient-to-r from-[#ffffff] to-[#f9fafb] dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300 ease-in-out group"
           >
             <input type="radio" name="faq-accordion" id="faq-3" />
             <div
-              class="collapse-title font-Estedad text-[#1F2937] text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] transition-colors duration-200 cursor-pointer relative"
+              class="collapse-title font-Estedad text-[#1F2937] dark:text-gray-200 text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] dark:hover:text-blue-500 transition-colors duration-200 cursor-pointer relative"
             >
               <div class="flex items-center justify-between">
                 <div
-                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] dark:border-blue-400 rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
                 >
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 plus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 plus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2920,7 +3164,7 @@
                     />
                   </svg>
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 minus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 minus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2941,7 +3185,7 @@
               </div>
             </div>
             <div
-              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#6B7280] leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] bg-[#FAFBFC]"
+              class="collapse-content font-Estedad text-[12px] md:text-[14px] text-[#6B7280] dark:text-gray-400 leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] dark:border-gray-600 bg-[#FAFBFC] dark:bg-gray-800"
             >
               <div>
                 بله، تمامی خودروها بیمه شخص ثالث و بدنه دارند و در صورت حادثه،
@@ -2954,18 +3198,18 @@
 
           <!-- #region FAQ Accordion Item 4 -->
           <div
-            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] bg-gradient-to-r from-[#ffffff] to-[#f9fafb] hover:shadow-lg transition-all duration-300 ease-in-out group"
+            class="collapse border w-full rounded-xl text-right border-[#E5E7EB] dark:border-gray-600 bg-gradient-to-r from-[#ffffff] to-[#f9fafb] dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300 ease-in-out group"
           >
             <input type="radio" name="faq-accordion" id="faq-4" />
             <div
-              class="collapse-title font-Estedad text-[#1F2937] text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] transition-colors duration-200 cursor-pointer relative"
+              class="collapse-title font-Estedad text-[#1F2937] dark:text-gray-200 text-[15px] md:text-[17px] py-4 md:py-6 px-4 md:px-6 hover:text-[#194BF0] dark:hover:text-blue-500 transition-colors duration-200 cursor-pointer relative"
             >
               <div class="flex items-center justify-between">
                 <div
-                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] border-[2px] border-[#194BF0] dark:border-blue-400 rounded-[6px] md:rounded-[8px] flex items-center justify-center transition-all duration-300 accordion-icon shadow-md"
                 >
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 plus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 plus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2978,7 +3222,7 @@
                     />
                   </svg>
                   <svg
-                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] transition-transform duration-300 minus-icon"
+                    class="w-3 h-3 md:w-4 md:h-4 text-[#194BF0] dark:text-blue-400 transition-transform duration-300 minus-icon"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -2999,7 +3243,7 @@
               </div>
             </div>
             <div
-              class="collapse-content font-Estedad text-[12px] md:text-[15px] text-[#6B7280] leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] bg-[#FAFBFC]"
+              class="collapse-content font-Estedad text-[12px] md:text-[15px] text-[#6B7280] dark:text-gray-400 leading-7 px-4 md:px-6 pb-4 md:pb-6 border-t border-[#F3F4F6] dark:border-gray-600 bg-[#FAFBFC] dark:bg-gray-800"
             >
               <div>
                 محدودیت بر اساس مدت اجاره متفاوت است؛ برای اجاره روزانه ۲۵۰
@@ -3032,7 +3276,7 @@
       >
         <!-- #region header_text-->
         <div
-          class="w-full md:w-[45%] h-auto md:h-[42px] mx-auto font-Estedad text-[16px] md:text-[24px] text-[#5E5E5E] text-center leading-relaxed"
+          class="w-full md:w-[45%] h-auto md:h-[42px] mx-auto font-Estedad text-[16px] md:text-[24px] text-[#5E5E5E] dark:text-gray-400 text-center leading-relaxed"
         >
           آنچه مشتریان ما درموردمان گفته‌اند.
         </div>
@@ -3042,7 +3286,7 @@
         <div
           class="w-full h-auto md:h-[45px] flex gap-x-[5px] font-Estedad justify-center items-center text-[24px] md:text-[32px] font-semibold text-center border-none mb-0"
         >
-          <p class="text-[#353535]">نظرات</p>
+          <p class="text-[#353535] dark:text-gray-200">نظرات</p>
           <p class="text-[#D79C10]">مشتریان</p>
         </div>
         <!-- #endregion title_text-->
@@ -3054,14 +3298,14 @@
       >
         <!-- #region featured_review-->
         <div
-          class="w-full h-auto md:h-[391px] flex flex-col gap-y-[20px] md:gap-y-[35px] border-[1px] bg-[#ffffff] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] py-[20px] md:py-[16px]"
+          class="w-full h-auto md:h-[391px] flex flex-col gap-y-[20px] md:gap-y-[35px] border-[1px] bg-[#ffffff] dark:bg-gray-800 border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] py-[20px] md:py-[16px]"
         >
           <div
             class="w-full md:w-[12%] h-auto md:h-[228px] flex flex-col mx-auto mt-[8px] md:mt-[16px] gap-y-[8px] md:gap-y-[4px]"
           >
             <!-- #region customer_avatar-->
             <div
-              class="w-[100px] h-[100px] md:w-[136px] md:h-[136px] rounded-[50%] border-[3px] md:border-[5px] border-[#194BF0] mx-auto"
+              class="w-[100px] h-[100px] md:w-[136px] md:h-[136px] rounded-[50%] border-[3px] md:border-[5px] border-[#194BF0] dark:border-blue-400 mx-auto"
             >
               <img
                 src="./src/images/respanse-box/img-1.jpg"
@@ -3073,7 +3317,7 @@
 
             <!-- #region customer_name-->
             <div
-              class="w-full md:w-[54%] h-auto md:h-[28px] mx-auto text-center text-[14px] md:text-[16px] text-[#0C0C0C] font-Estedad"
+              class="w-full md:w-[54%] h-auto md:h-[28px] mx-auto text-center text-[14px] md:text-[16px] text-[#0C0C0C] dark:text-gray-200 font-Estedad"
             >
               اولدوز بهاور
             </div>
@@ -3088,32 +3332,32 @@
                 <input
                   type="radio"
                   name="rating-7"
-                  class="mask mask-star-2 bg-[#FDB713] rounded-3xl"
+                  class="mask mask-star-2 bg-[#FDB713] dark:bg-yellow-500 rounded-3xl"
                   aria-label="1 star"
                 />
                 <input
                   type="radio"
                   name="rating-7"
-                  class="mask mask-star-2 bg-[#FDB713] rounded-3xl"
+                  class="mask mask-star-2 bg-[#FDB713] dark:bg-yellow-500 rounded-3xl"
                   aria-label="2 star"
                 />
                 <input
                   type="radio"
                   name="rating-7"
-                  class="mask mask-star-2 bg-[#FDB713] rounded-3xl"
+                  class="mask mask-star-2 bg-[#FDB713] dark:bg-yellow-500 rounded-3xl"
                   aria-label="3 star"
                 />
                 <input
                   type="radio"
                   name="rating-7"
-                  class="mask mask-star-2 bg-[#FDB713] rounded-3xl"
+                  class="mask mask-star-2 bg-[#FDB713] dark:bg-yellow-500 rounded-3xl"
                   aria-label="4 star"
                   checked="checked"
                 />
                 <input
                   type="radio"
                   name="rating-7"
-                  class="mask mask-star-2 bg-[#FDB713] rounded-3xl"
+                  class="mask mask-star-2 bg-[#FDB713] dark:bg-yellow-500 rounded-3xl"
                   aria-label="5 star"
                 />
               </div>
@@ -3122,7 +3366,7 @@
           </div>
 
           <div
-            class="w-full md:w-[776px] h-auto md:h-[107px] mx-auto font-Estedad font-normal text-[12px] md:text-[14px] text-[#727272] text-center p-0 leading-[180%] px-4 md:px-0"
+            class="w-full md:w-[776px] h-auto md:h-[107px] mx-auto font-Estedad font-normal text-[12px] md:text-[14px] text-[#727272] dark:text-gray-400 text-center p-0 leading-[180%] px-4 md:px-0"
           >
             اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک شرکت
             با سابقه و مطمئن می‌گشتم!
@@ -3142,7 +3386,7 @@
         >
           <!-- #region customer_card_1-->
           <div
-            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
+            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] dark:hover:bg-yellow-500 duration-300 group"
           >
             <div
               class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
@@ -3160,12 +3404,12 @@
                 class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
-                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
+                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] dark:text-gray-200 group-hover:text-black"
                 >
                   اولدوز بهاور
                 </div>
                 <div
-                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949]"
+                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949] dark:text-gray-400 group-hover:text-black"
                 >
                   27 دی ماه 1380
                 </div>
@@ -3176,7 +3420,7 @@
 
           <!-- #region customer_card_2-->
           <div
-            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
+            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] dark:hover:bg-yellow-500 duration-300 group"
           >
             <div
               class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
@@ -3194,12 +3438,12 @@
                 class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
-                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
+                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] dark:text-gray-200 group-hover:text-black"
                 >
                   محمدجواد امینی
                 </div>
                 <div
-                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949]"
+                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949] dark:text-gray-400 group-hover:text-black"
                 >
                   27 دی ماه 1399
                 </div>
@@ -3210,7 +3454,7 @@
 
           <!-- #region customer_card_3-->
           <div
-            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
+            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] dark:hover:bg-yellow-500 duration-300 group"
           >
             <div
               class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
@@ -3228,12 +3472,12 @@
                 class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
-                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121]"
+                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] dark:text-gray-200 group-hover:text-black"
                 >
                   فرزانه حیدری
                 </div>
                 <div
-                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949]"
+                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949] dark:text-gray-400 group-hover:text-black"
                 >
                   27 دی ماه 1380
                 </div>
@@ -3244,7 +3488,7 @@
 
           <!-- #region customer_card_4-->
           <div
-            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] duration-300"
+            class="w-full md:w-1/4 h-auto md:h-full bg-[#ffffff] dark:bg-gray-800 border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] p-[16px] md:p-[20px] md:pr-[45px] cursor-pointer hover:bg-[#FDB713] dark:hover:bg-yellow-500 duration-300 group"
           >
             <div
               class="h-auto md:h-[64px] w-full mx-auto flex gap-x-[8px] md:gap-x-[16px] items-center"
@@ -3262,12 +3506,12 @@
                 class="flex-1 h-auto md:h-[61px] flex flex-col gap-y-[4px] md:gap-y-[8px]"
               >
                 <div
-                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] whitespace-nowrap"
+                  class="font-Estedad text-[14px] md:text-[16px] text-[#212121] dark:text-gray-200 group-hover:text-black whitespace-nowrap"
                 >
                   فاطمه ابراهیمی‌فر
                 </div>
                 <div
-                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949]"
+                  class="font-Estedad text-[12px] md:text-[14px] text-[#494949] dark:text-gray-400 group-hover:text-black"
                 >
                   27 دی ماه 1380
                 </div>
@@ -3288,14 +3532,14 @@
           class="w-full md:w-[77%] h-auto md:h-[95px] flex mr-0 md:mr-[220px] flex-col gap-y-[8px] md:gap-y-[8px] mb-0"
         >
           <div
-            class="w-full md:w-[13%] h-auto md:h-[42px] mx-auto text-center font-Estedad text-[16px] md:text-[24px] text-[#5E5E5E]"
+            class="w-full md:w-[13%] h-auto md:h-[42px] mx-auto text-center font-Estedad text-[16px] md:text-[24px] text-[#5E5E5E] dark:text-gray-400"
           >
             مقالات ما
           </div>
           <div
             class="w-full h-auto md:h-[45px] flex gap-x-[5px] items-center justify-center font-Estedad text-[24px] md:text-[34px] font-semibold"
           >
-            <p class="text-[#353535]">مجله</p>
+            <p class="text-[#353535] dark:text-gray-200">مجله</p>
             <p class="text-[#D79C10]">خودرو</p>
           </div>
         </div>
@@ -3307,7 +3551,7 @@
           class="w-full md:w-[25%] h-[40px] md:h-[48px] mt-0 md:mt-[46px] flex gap-x-[6px] md:gap-x-[8px] py-[4px] items-center justify-center"
         >
           <div
-            class="font-Estedad w-fit text-center text-[14px] md:text-[18px] text-[#194BF0] font-semibold"
+            class="font-Estedad w-fit text-center text-[14px] md:text-[18px] text-[#194BF0] dark:text-blue-400 font-semibold"
           >
             مشاهده همه
           </div>
@@ -3317,7 +3561,7 @@
             <img
               src="./src/images/Reserve-Cars/arrow-left.svg"
               alt=""
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover dark:invert dark:opacity-80"
             />
           </div>
         </a>
@@ -3331,7 +3575,7 @@
         <!-- #region img_1-->
         <a
           href="#"
-          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] bg-[#ffffff] flex flex-col gap-y-[12px] md:gap-y-[16px]"
+          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 flex flex-col gap-y-[12px] md:gap-y-[16px]"
         >
           <div
             class="w-[92%] mx-auto rounded-[8px] md:rounded-[12px] mt-[12px] md:mt-[16px] h-[200px] md:h-[220px] overflow-hidden"
@@ -3351,13 +3595,13 @@
               class="w-full h-auto md:h-[86px] mx-auto flex flex-col gap-y-[8px] md:gap-y-[10px]"
             >
               <div
-                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
+                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] dark:text-gray-200 text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
               >
                 روش های مختلف برای اجاره خودرو
               </div>
 
               <div
-                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] line-clamp-2"
+                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] dark:text-gray-400 line-clamp-2"
               >
                 امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
                 وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
@@ -3376,10 +3620,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/clock.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/clock.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] font-bold"
+                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] font-bold"
                 >
                   3دقیقه
                 </div>
@@ -3390,10 +3638,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/eye.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/eye.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] text-right font-bold"
+                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] text-right font-bold"
                 >
                   1,213
                 </div>
@@ -3407,7 +3659,7 @@
         <!-- #region img_2-->
         <a
           href="#"
-          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] bg-[#ffffff] flex flex-col gap-y-[12px] md:gap-y-[16px]"
+          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 flex flex-col gap-y-[12px] md:gap-y-[16px]"
         >
           <div
             class="w-[92%] mx-auto rounded-[8px] md:rounded-[12px] mt-[12px] md:mt-[16px] h-[200px] md:h-[220px] overflow-hidden"
@@ -3427,13 +3679,13 @@
               class="w-full h-auto md:h-[86px] mx-auto flex flex-col gap-y-[8px] md:gap-y-[10px]"
             >
               <div
-                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
+                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] dark:text-gray-200 text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
               >
                 روش های مختلف برای اجاره خودرو
               </div>
 
               <div
-                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] line-clamp-2"
+                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] dark:text-gray-400 line-clamp-2"
               >
                  امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
                 به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
@@ -3452,10 +3704,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/clock.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/clock.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] font-bold"
+                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] font-bold"
                 >
                   3دقیقه
                 </div>
@@ -3466,10 +3722,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/eye.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/eye.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] text-right font-bold"
+                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] text-right font-bold"
                 >
                   1,213
                 </div>
@@ -3483,7 +3743,7 @@
         <!-- #region img_3-->
         <a
           href="#"
-          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] rounded-[12px] md:rounded-[16px] bg-[#ffffff] flex flex-col gap-y-[12px] md:gap-y-[16px]"
+          class="w-full md:w-1/3 h-full border-[1px] border-[#D7D7D7] dark:border-gray-600 rounded-[12px] md:rounded-[16px] bg-[#ffffff] dark:bg-gray-800 flex flex-col gap-y-[12px] md:gap-y-[16px]"
         >
           <div
             class="w-[92%] mx-auto rounded-[8px] md:rounded-[12px] mt-[12px] md:mt-[16px] h-[200px] md:h-[220px] overflow-hidden"
@@ -3503,13 +3763,13 @@
               class="w-full h-auto md:h-[86px] mx-auto flex flex-col gap-y-[8px] md:gap-y-[10px]"
             >
               <div
-                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
+                class="w-full h-auto md:h-[28px] font-Estedad text-[#414141] dark:text-gray-200 text-[14px] md:text-[16px] text-right font-bold leading-[24px] md:leading-[28px]"
               >
                 روش های مختلف برای اجاره خودرو
               </div>
 
               <div
-                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] line-clamp-2"
+                class="w-full h-auto md:h-[42px] text-center font-Estedad text-[11px] md:text-[13px] text-[#757575] dark:text-gray-400 line-clamp-2"
               >
                  امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
                 به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
@@ -3528,10 +3788,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/clock.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/clock.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] font-bold"
+                  class="w-auto md:w-[44px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] font-bold"
                 >
                   3دقیقه
                 </div>
@@ -3542,10 +3806,14 @@
                 <div
                   class="w-[16px] h-[16px] md:w-[18px] md:h-[18px] flex justify-center items-center mt-[2px] md:mt-[4px]"
                 >
-                  <img src="./src/images/three-img-home/eye.svg" alt="" />
+                  <img
+                    src="./src/images/three-img-home/eye.svg"
+                    alt=""
+                    class="dark:invert dark:opacity-80"
+                  />
                 </div>
                 <div
-                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] leading-[20px] md:leading-[25px] text-right font-bold"
+                  class="w-auto md:w-[31px] h-full font-Estedad text-[12px] md:text-[14px] text-[#757575] dark:text-gray-400 leading-[20px] md:leading-[25px] text-right font-bold"
                 >
                   1,213
                 </div>
@@ -3560,7 +3828,7 @@
       <!-- #region footer -->
       <div class="footer w-full">
         <div
-          class="w-[95%] sm:w-[90%] lg:w-[85%] mt-8 sm:mt-12 lg:mt-20 bg-[#1E1E1EE5] rounded-xl sm:rounded-2xl mx-auto mb-6 sm:mb-8"
+          class="w-[95%] sm:w-[90%] lg:w-[85%] mt-8 sm:mt-12 lg:mt-20 bg-[#1E1E1EE5] rounded-xl sm:rounded-2xl mx-auto mb-6 sm:mb-8 dark:bg-gray-800"
         >
           <footer class="w-full">
             <!-- #region footer_top -->
@@ -3568,7 +3836,7 @@
               class="w-[95%] sm:w-[90%] lg:w-11/12 mx-auto border-[1px] border-[#868686] rounded-[12px] sm:rounded-[16px] flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 lg:gap-6 mt-6 sm:mt-8 lg:mt-10"
             >
               <div
-                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300 dark:hover:bg-gray-700"
               >
                 <img
                   src="./src/images/Footer/zang.svg"
@@ -3591,7 +3859,7 @@
                 class="w-full sm:w-px h-px sm:h-8 bg-[#868686] sm:my-4 hidden sm:block"
               ></div>
               <div
-                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300 dark:hover:bg-gray-700"
               >
                 <img
                   src="./src/images/Footer/email.svg"
@@ -3614,7 +3882,7 @@
                 class="w-full sm:w-px h-px sm:h-8 bg-[#868686] sm:my-4 hidden sm:block"
               ></div>
               <div
-                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300"
+                class="w-full sm:w-1/3 flex items-center gap-3 sm:gap-4 lg:gap-5 justify-center p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-[#3A3A3A] transition-all duration-300 dark:hover:bg-gray-700"
               >
                 <img
                   src="./src/images/Footer/addres.svg"
@@ -3666,22 +3934,22 @@
                 >
                   <a
                     href="#"
-                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A] dark:hover:bg-gray-700"
                     >دسترسی آسان</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A] dark:hover:bg-gray-700"
                     >سوالات متداول</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A] dark:hover:bg-gray-700"
                     >تماس با ما</a
                   >
                   <a
                     href="#"
-                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A]"
+                    class="font-Estedad text-xs sm:text-sm lg:text-base text-gray-100 font-medium hover:text-yellow-400 hover:translate-x-1 sm:hover:translate-x-2 transition-all duration-300 p-2 rounded-lg hover:bg-[#2A2A2A] dark:hover:bg-gray-700"
                     >درباره ما</a
                   >
                 </div>
